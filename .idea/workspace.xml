@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="progweb2023:war exploded" />
+      <artifact name="ProgWeb2023:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,19 +10,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Project setup">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/AttivitaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/ChiSiamoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/ContattiServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Donation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetRandomQuote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LoginPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/intestazione.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/quoteManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HelloServlet.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,28 +67,41 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2PbMdJa2h7RuGGii0vpoQ0BATu7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/asus/Desktop/ProgWeb2023",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.34367815",
+    "settings.editor.selected.configurable": "File.Encoding",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Tomcat Server.tomcat 9">
@@ -146,12 +192,12 @@
         </option>
       </method>
     </configuration>
-    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.87" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="progweb2023:war exploded">
+        <artifact name="ProgWeb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/progweb2023_war_exploded" />
+            <option name="CONTEXT_PATH" value="/ProgWeb2023" />
           </settings>
         </artifact>
       </deployment>
@@ -230,6 +276,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="progweb2023:war exploded" />
+          <artifact name="ProgWeb2023:war" />
         </option>
       </method>
     </configuration>
@@ -247,6 +294,10 @@
       <option name="presentableId" value="Default" />
       <updated>1683721415204</updated>
       <workItem from="1683721416371" duration="4022000" />
+      <workItem from="1685723549267" duration="676000" />
+      <workItem from="1685725254987" duration="472000" />
+      <workItem from="1685725853413" duration="15830000" />
+      <workItem from="1685805796188" duration="34524000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>

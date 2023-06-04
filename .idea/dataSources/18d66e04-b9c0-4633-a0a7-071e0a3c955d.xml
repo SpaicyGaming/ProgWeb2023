@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Tum4WorldDB@localhost">
+  <database-model serializer="dbm" dbms="DERBY" family-id="DERBY" format-version="4.45">
+    <root id="1">
+      <ServerVersion>10.16.1.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <table id="13" parent="2" name="DONATIONS"/>
+    <table id="14" parent="2" name="USERS"/>
+    <table id="15" parent="2" name="USER_TYPES"/>
+    <column id="16" parent="13" name="DOANTION_ID">
+      <DasType>INTEGER|4s</DasType>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="17" parent="13" name="DATA_DONAZIONE">
+      <DasType>DATE|91s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="18" parent="13" name="IMPORTO">
+      <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="19" parent="14" name="USER_ID">
+      <DasType>INTEGER|4s</DasType>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="20" parent="14" name="USERNAME">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="21" parent="14" name="MAIL">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="22" parent="14" name="NOME">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="23" parent="14" name="COGNOME">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="24" parent="14" name="NUMERO_DI_TELEFONO">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="25" parent="14" name="DATA_DI_NASCITA">
+      <DasType>DATE|91s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="26" parent="14" name="USER_TYPE">
+      <DasType>INTEGER|4s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="27" parent="14" name="PASSWORD">
+      <DasType>VARCHAR(1024)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <foreign-key id="28" parent="14" name="SQL0000000002-6839c016-0188-8749-7cd9-000003a79a58">
+      <ColNames>USER_TYPE</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <RefColNames>USER_TYPE_ID</RefColNames>
+      <RefTableName>USER_TYPES</RefTableName>
+    </foreign-key>
+    <index id="29" parent="14" name="SQL0000000001-40348015-0188-8749-7cd9-000003a79a58">
+      <ColNames>USER_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="30" parent="14" name="SQL0000000000-582f8014-0188-8749-7cd9-000003a79a58">
+      <ColNames>USERNAME</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="31" parent="14" name="SQL0000000002-6839c016-0188-8749-7cd9-000003a79a58">
+      <ColNames>USER_TYPE</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </index>
+    <key id="32" parent="14" name="SQL0000000001-40348015-0188-8749-7cd9-000003a79a58">
+      <ColNames>USER_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="33" parent="14" name="SQL0000000000-582f8014-0188-8749-7cd9-000003a79a58">
+      <ColNames>USERNAME</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </key>
+    <column id="34" parent="15" name="USER_TYPE_ID">
+      <DasType>INTEGER|4s</DasType>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="35" parent="15" name="USER_TYPE">
+      <DasType>VARCHAR(128)|12s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <index id="36" parent="15" name="SQL0000000081-97e00100-0188-81e1-6922-000003a3bae0">
+      <ColNames>USER_TYPE_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <index id="37" parent="15" name="SQL0000000082-a0200101-0188-81e1-6922-000003a3bae0">
+      <ColNames>USER_TYPE</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="38" parent="15" name="SQL0000000081-97e00100-0188-81e1-6922-000003a3bae0">
+      <ColNames>USER_TYPE_ID</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="39" parent="15" name="SQL0000000082-a0200101-0188-81e1-6922-000003a3bae0">
+      <ColNames>USER_TYPE</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+    </key>
+  </database-model>
+</dataSource>
