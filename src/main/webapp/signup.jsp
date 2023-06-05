@@ -12,37 +12,38 @@
 </head>
 <body>
     <%@ include file="intestazione.html" %>
+    <jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
 
     <form method="POST" action="SignUpServlet">
         <label for="nome">nome:</label><br>
-        <input type="text" id="nome" name="nome"><br><br>
+        <input type="text" id="nome" name="nome" required><br><br>
 
         <label for="cognome">cognome:</label><br>
-        <input type="text" id="cognome" name="cognome"><br><br>
+        <input type="text" id="cognome" name="cognome" required><br><br>
 
         <label for="username">username:</label><br>
-        <input type="text" id="username" name="username"><br><br>
+        <input type="text" id="username" name="username" required> <%=errorMessage%> <br><br>
 
         <label for="bd">data di nascita:</label><br>
-        <input type="date" id="bd" name="bd"><br><br>
+        <input type="date" id="bd" name="bd" required><br><br>
 
         <label for="mail">email:</label><br>
-        <input type="email" id="mail" name="mail"><br><br>
+        <input type="email" id="mail" name="mail" required><br><br>
 
         <label for="numeroDiTelefono">Enter your phone number:</label><br>
-        <input type="tel" id="numeroDiTelefono" name="numeroDiTelefono"><br><br>
+        <input type="tel" id="numeroDiTelefono" name="numeroDiTelefono" required><br><br>
 
-        <input type="radio" id="simpatizzante" name="userType" value="simpatizzante" checked>
+        <input type="radio" id="simpatizzante" name="userType" value="simpatizzante" checked required>
         <label for="simpatizzante">simpatizzante</label><br>
 
-        <input type="radio" id="aderente" name="userType" value="aderente">
+        <input type="radio" id="aderente" name="userType" value="aderente" required>
         <label for="aderente">aderente</label><br><br>
 
         <label for="password">password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password" required><br><br>
 
         <label for="confermaPassword">conferma password:</label><br>
-        <input type="password" id="confermaPassword" name="confermaPassword"><br><br>
+        <input type="password" id="confermaPassword" name="confermaPassword" required><br><br>
 
         <input type="submit" value="submit"><br>
         <input type="reset"><br>

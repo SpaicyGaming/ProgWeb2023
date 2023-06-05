@@ -14,7 +14,7 @@ public class UserType {
     private String stringifiedType;
     private int type;
     public UserType(String t){
-        String stringifiedType = t;
+        stringifiedType = t;
         boolean isNull = true;
         switch(t) {
             case SIMPATIZZANTE:

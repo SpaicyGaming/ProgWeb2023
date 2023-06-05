@@ -9,11 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Costruito lo &quot;scheletro&quot; del sito.&#10;Di funzionante c'è la citazione che si aggiorna ogni venti secondi e il SignUp.&#10;Il più delle servlet e delle pagine jsp sono vuote (quasi).&#10;I link nel nav funzionano e sia nav che footer sono inclusi in tutte le pagine.&#10;Al signup mancano tutti i controlli sull'input (double check della password compreso).&#10;Il download del volantino funziona ma il volantino l'ho preso in prestito dalla lidl, il logo l'ho pescato a caso su google immagini, mancano ancora tutte le descrizioni.&#10;Non ho toccato la parte privata.">
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/ErrorMessageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/PrivateAreaAccessFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/PrivateAreaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/donationTool.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/donationScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/privateSideScripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/personalData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Donation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Donation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LoginPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DeleteProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/intestazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/intestazione.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +48,8 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,6 +87,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.34367815",
@@ -171,7 +194,7 @@
       <deployment>
         <artifact name="ProgWeb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/ProgWeb2023" />
+            <option name="CONTEXT_PATH" value="/ProgWeb2023_war" />
           </settings>
         </artifact>
       </deployment>
@@ -271,7 +294,8 @@
       <workItem from="1685723549267" duration="676000" />
       <workItem from="1685725254987" duration="472000" />
       <workItem from="1685725853413" duration="15830000" />
-      <workItem from="1685805796188" duration="39013000" />
+      <workItem from="1685805796188" duration="39771000" />
+      <workItem from="1685961700969" duration="29087000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -287,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685911418186</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1685926111140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685926111140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +327,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project setup" />
     <MESSAGE value="Costruito lo &quot;scheletro&quot; del sito.&#10;Di funzionante c'è la citazione che si aggiorna ogni venti secondi e il SignUp.&#10;Il più delle servlet e delle pagine jsp sono vuote (quasi).&#10;I link nel nav funzionano e sia nav che footer sono inclusi in tutte le pagine.&#10;Al signup mancano tutti i controlli sull'input (double check della password compreso).&#10;Il download del volantino funziona ma il volantino l'ho preso in prestito dalla lidl, il logo l'ho pescato a caso su google immagini, mancano ancora tutte le descrizioni.&#10;Non ho toccato la parte privata." />
-    <option name="LAST_COMMIT_MESSAGE" value="Costruito lo &quot;scheletro&quot; del sito.&#10;Di funzionante c'è la citazione che si aggiorna ogni venti secondi e il SignUp.&#10;Il più delle servlet e delle pagine jsp sono vuote (quasi).&#10;I link nel nav funzionano e sia nav che footer sono inclusi in tutte le pagine.&#10;Al signup mancano tutti i controlli sull'input (double check della password compreso).&#10;Il download del volantino funziona ma il volantino l'ho preso in prestito dalla lidl, il logo l'ho pescato a caso su google immagini, mancano ancora tutte le descrizioni.&#10;Non ho toccato la parte privata." />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

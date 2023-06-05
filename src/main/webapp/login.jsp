@@ -11,8 +11,21 @@
     <title>Title</title>
 </head>
 <body>
-    <%@ include file="intestazione.html" %>
+<%@ include file="intestazione.html" %>
+<jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
 
-    <%@ include file="footer.html" %>
+<form method="POST" action="LoginServlet">
+    <label for="username">username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <%=errorMessage%>
+
+    <input type="submit" value="submit"><br>
+</form>
+
+<%@ include file="footer.html" %>
 </body>
 </html>

@@ -10,7 +10,7 @@ import java.sql.Connection;
 public class SignUpServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
     }
 
     @Override
@@ -23,6 +23,10 @@ public class SignUpServlet extends HttpServlet {
         String bd = request.getParameter("bd");
         String userType = request.getParameter("userType");
         String password = request.getParameter("password");
+
+        if(nome == null || cognome == null || username == null || mail == null || numeroDiTelefono == null || bd == null || userType == null || password == null){
+            getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
+        }
 
         Connection c = (Connection)request.getSession().getAttribute("connection");
         UserDAO ud = new UserDAO(c);
@@ -37,11 +41,18 @@ public class SignUpServlet extends HttpServlet {
             u.setBd(bd);
             u.setUserType(ut);
             u.setPassword(password);
-            ud.saveUser(u);
+            try {
+                ud.saveUser(u);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
 
             getServletContext().getRequestDispatcher("/registrazioneConfermata.jsp").forward(request, response);
         }else{
             //qui si informa l'utente del fatto che lo username non è disponibile
+            ErrorMessageBean em = new ErrorMessageBean();
+            em.setMessage("Il nome utente scelto è già in uso");
+            request.setAttribute("errorMessage", em);
             getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
         }
     }

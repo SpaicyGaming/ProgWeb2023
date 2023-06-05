@@ -32,32 +32,25 @@ public class UserDAO {
         return u;
     }
 
-    public boolean saveUser(User u){
-        /*
-        System.out.println("prova");
-        System.out.println(u.getNome());
-        System.out.println(u.getCognome());
-        System.out.println(u.getUsername());
-        */
+    public void saveUser(User u) throws SQLException {
+        String query = String.format("INSERT INTO USERS VALUES (DEFAULT, '%s',"+
+            " '%s', '%s', '%s', '%s', '%s', %d, '%s')",
+            u.getUsername(),
+            u.getMail(),
+            u.getNome(),
+            u.getCognome(),
+            u.getPhoneNumber(),
+            u.getBd(),
+            u.getUserType().getTypeId(),
+            u.getPassword()
+        );
+        Statement stmt = this.c.createStatement();
+        stmt.execute(query);
+    }
 
-        try {
-            String query = String.format("INSERT INTO USERS VALUES (DEFAULT, '%s',"+
-                " '%s', '%s', '%s', '%s', '%s', %d, '%s')",
-                u.getUsername(),
-                u.getMail(),
-                u.getNome(),
-                u.getCognome(),
-                u.getPhoneNumber(),
-                u.getBd(),
-                u.getUserType().getTypeId(),
-                u.getPassword()
-            );
-            Statement stmt = this.c.createStatement();
-            stmt.execute(query);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
+    public void deleteUser(User u) throws SQLException {
+        String query = String.format("DELETE FROM USERS WHERE USERNAME = '%s'", u.getUsername());
+        Statement stmt = this.c.createStatement();
+        stmt.execute(query);
     }
 }
