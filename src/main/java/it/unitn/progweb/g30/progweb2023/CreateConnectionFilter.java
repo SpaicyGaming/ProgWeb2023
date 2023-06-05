@@ -26,7 +26,7 @@ public class CreateConnectionFilter implements Filter {
                 Connection c = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
                 session.setAttribute("connection", c);
             }catch(Exception e){
-                System.err.println(e);
+                e.printStackTrace();
             }
         }
         ((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());

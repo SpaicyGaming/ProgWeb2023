@@ -32,7 +32,7 @@
         <label for="numeroDiTelefono">Enter your phone number:</label><br>
         <input type="tel" id="numeroDiTelefono" name="numeroDiTelefono"><br><br>
 
-        <input type="radio" id="simpatizzante" name="userType" value="simpatizzante">
+        <input type="radio" id="simpatizzante" name="userType" value="simpatizzante" checked>
         <label for="simpatizzante">simpatizzante</label><br>
 
         <input type="radio" id="aderente" name="userType" value="aderente">

@@ -47,8 +47,8 @@ public class UserType {
                 ResultSet result = stmt.executeQuery(query);
                 result.next();
                 type = result.getInt(1);
-            } catch (NullPointerException | SQLException | ClassNotFoundException var2) {
-                System.out.println(var2);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }
