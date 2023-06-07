@@ -39,7 +39,9 @@ public class UserType {
         if(isNull) {
             try {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
+                //Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
                 this.connection = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
+                //this.connection = DriverManager.getConnection("jdbc:derby:Tum4WorldDB;create=true");
 
 
                 String query = "SELECT USER_TYPE_ID FROM USER_TYPES WHERE USER_TYPE = '" + stringifiedType + "'";

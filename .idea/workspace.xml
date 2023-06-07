@@ -9,34 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/ErrorMessageBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/PrivateAreaAccessFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/PrivateAreaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/donationTool.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/donationScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/privateSideScripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/personalData.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetAllAderentiServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetAllSimpatizzantiServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetAllUsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/IscrivitiAttivitaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/adminScripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d66e04-b9c0-4633-a0a7-071e0a3c955d.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d66e04-b9c0-4633-a0a7-071e0a3c955d/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d66e04-b9c0-4633-a0a7-071e0a3c955d/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d66e04-b9c0-4633-a0a7-071e0a3c955d/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Donation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Donation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LoginPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DeleteProfileServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/DonationDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UserType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/intestazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/intestazione.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/about_db.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/about_db.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +42,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,16 +77,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/asus/Desktop/ProgWeb2023",
+    "last_opened_file_path": "C:/Users/asus/Desktop/ServletFinal",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.34367815",
-    "settings.editor.selected.configurable": "File.Encoding",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
   },
@@ -101,100 +96,24 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Tomcat Server.tomcat 9">
-    <configuration name="tomcat 10" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="progweb2023:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/progweb2023_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="06a278f1-19d7-4bc9-8977-a1554659dd66" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58465" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="progweb2023:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.87" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\Desktop\ProgWeb2023\target\progweb2023-1.0-SNAPSHOT\WEB-INF\lib" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean:clean" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProgWeb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/ProgWeb2023_war" />
+            <option name="CONTEXT_PATH" value="/ProgWeb2023" />
           </settings>
         </artifact>
       </deployment>
@@ -277,10 +196,6 @@
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Tomcat Server.tomcat 10" />
-      <item itemvalue="Tomcat Server.tomcat 9" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -295,7 +210,10 @@
       <workItem from="1685725254987" duration="472000" />
       <workItem from="1685725853413" duration="15830000" />
       <workItem from="1685805796188" duration="39771000" />
-      <workItem from="1685961700969" duration="29087000" />
+      <workItem from="1685961700969" duration="29999000" />
+      <workItem from="1686000672203" duration="7809000" />
+      <workItem from="1686057710576" duration="6165000" />
+      <workItem from="1686064781457" duration="23338000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -318,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685926111140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima.">
+      <created>1685996551483</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685996551484</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +253,8 @@
     <MESSAGE value="Project setup" />
     <MESSAGE value="Costruito lo &quot;scheletro&quot; del sito.&#10;Di funzionante c'è la citazione che si aggiorna ogni venti secondi e il SignUp.&#10;Il più delle servlet e delle pagine jsp sono vuote (quasi).&#10;I link nel nav funzionano e sia nav che footer sono inclusi in tutte le pagine.&#10;Al signup mancano tutti i controlli sull'input (double check della password compreso).&#10;Il download del volantino funziona ma il volantino l'ho preso in prestito dalla lidl, il logo l'ho pescato a caso su google immagini, mancano ancora tutte le descrizioni.&#10;Non ho toccato la parte privata." />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
