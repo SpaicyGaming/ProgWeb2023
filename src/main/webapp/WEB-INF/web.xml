@@ -25,4 +25,18 @@
         <url-pattern>/aderentePrivate.jsp</url-pattern>
         <url-pattern>/adminPrivate.jsp</url-pattern>
     </filter-mapping>
+    <filter id="UpdateViewsFilter">
+        <filter-name>UpdateViewsFilter</filter-name>
+        <filter-class>it.unitn.progweb.g30.progweb2023.UpdateViewsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>UpdateViewsFilter</filter-name>
+        <url-pattern>/PrivateAreaServlet</url-pattern>
+        <url-pattern>/HomeServlet</url-pattern>
+        <url-pattern>/AttivitaServlet</url-pattern>
+        <url-pattern>/ContattiServlet</url-pattern>
+        <url-pattern>/ChiSiamoServlet</url-pattern>
+        <url-pattern>/LoginServlet</url-pattern>
+        <url-pattern>/SignUpServlet</url-pattern>
+    </filter-mapping>
 </web-app>

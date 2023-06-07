@@ -35,6 +35,7 @@ function displayAllAderenti(){
 }
 
 function displayViews(){
+    document.getElementById("resultContainer").innerHTML = "Loading...";
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", "GetViewsServlet", true);
     xhttp.responseType = "json";
@@ -45,10 +46,15 @@ function displayViews(){
             link.setAttribute("href", "ResetViewsServlet");
             link.appendChild(btn);
             btn.innerText = "reset";
-
             let btnDiv = document.createElement("div");
             let dataDiv = document.createElement("div");
             let rc = document.getElementById("resultContainer");
+            rc.innerHTML = '';
+            /*
+            while (rc.firstChild) {
+                rc.removeChild(rc.lastChild);
+            }
+            */
             rc.appendChild(btnDiv);
             rc.appendChild(dataDiv);
             btnDiv.appendChild(link);
