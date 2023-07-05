@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ProgWeb2023:war" />
+      <artifact name="progweb2023:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,29 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/ResetViewsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/UpdateViewsFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/Views.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e5f7883-d903-4038-bc21-4af8eb7890bc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e5f7883-d903-4038-bc21-4af8eb7890bc/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e5f7883-d903-4038-bc21-4af8eb7890bc/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2e5f7883-d903-4038-bc21-4af8eb7890bc/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c521.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c521.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c531.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c531.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c541.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c541.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/javascript/adminScripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/javascript/adminScripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/about_db.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utils/about_db.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/volantino.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/volantino.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +34,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6bbd0751-deb8-40f4-b8f9-9f58a3c8541e" />
+        <option name="url" value="https://github.com/SpaicyGaming/ProgWeb2023.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -62,6 +57,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2PbMdJa2h7RuGGii0vpoQ0BATu7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -70,34 +68,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asus/Desktop/ServletFinal&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/Giulia/IdeaProjects/ProgWeb2023/src/main/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.34367815",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;derby&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "derby"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giulia\IdeaProjects\ProgWeb2023\src\main\webapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus\Desktop\ProgWeb2023\target\progweb2023-1.0-SNAPSHOT\WEB-INF\lib" />
     </key>
@@ -109,7 +110,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="tomcat 8.5.87" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.87" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProgWeb2023:war">
@@ -216,6 +217,8 @@
       <workItem from="1686057710576" duration="6165000" />
       <workItem from="1686064781457" duration="23826000" />
       <workItem from="1686143075504" duration="10534000" />
+      <workItem from="1688565867045" duration="17000" />
+      <workItem from="1688565982865" duration="3868000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
