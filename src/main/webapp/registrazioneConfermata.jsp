@@ -8,13 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Tum4World</title>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <%@ include file="intestazione.html" %>
-
+<div class="maintext">
     <h1>Registrazione confermata</h1>
-
+</div>
     <%@ include file="footer.html" %>
 </body>
 </html>
