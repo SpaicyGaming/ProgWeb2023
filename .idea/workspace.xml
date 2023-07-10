@@ -10,21 +10,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni.">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiunta di alcune descrizioni e immagini.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetRandomQuote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetRandomQuote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/attività 3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/intestazione.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/intestazione.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,6 @@
   </component>
   <component name="RunManager">
     <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/progweb2023_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="progweb2023:war">
@@ -231,6 +228,7 @@
       <workItem from="1686143075504" duration="10534000" />
       <workItem from="1688565867045" duration="17000" />
       <workItem from="1688565982865" duration="3868000" />
+      <workItem from="1688995297486" duration="18500000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -267,11 +265,29 @@
       <option name="project" value="LOCAL" />
       <updated>1686107079815</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Aggiunta di alcune descrizioni e immagini.">
+      <created>1688992882417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1688992882417</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project setup" />
@@ -279,7 +295,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima." />
     <MESSAGE value="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni." />
-    <option name="LAST_COMMIT_MESSAGE" value="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni." />
+    <MESSAGE value="Aggiunta di alcune descrizioni e immagini." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunta di alcune descrizioni e immagini." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -6,44 +6,60 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Tum4World</title>
-    <link rel="icon" href="logo.png">
-    <meta charset="UTF-8"/>
-</head>
-<body>
-    <%@ include file="intestazione.html" %>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Tum4World</title>
+        <link rel="icon" href="logo.png">
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <%@ include file="intestazione.html" %>
 
-    <table>
-        <tr>
-            <td style="border: 10px">
-                <div>
-                    <img src="logo_htmlit.png">
-                    <figcaption>
-                        Creare centri di apprendimento dove i bambini svantaggiati possono ricevere supporto scolastico.
-                    </figcaption>
-                </div>
-            </td>
-            <td style="border: 10px">
-                <div>
-                    <img src="logo_htmlit.png">
-                    <figcaption>
-                        Fornire materiale didattico e libri ai bambini provenienti da famiglie a basso reddito.
-                    </figcaption>
-                </div>
-            </td>
-            <td style="border: 10px">
-                <div>
-                    <img src="logo_htmlit.png">
-                    <figcaption>
-                        Collaborare con le scuole locali per implementare programmi educativi supplementari e migliorare l'accesso all'istruzione.
-                    </figcaption>
-                </div>
-            </td>
-        </tr>
-    </table>
+        <style>
+            .image-container {
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                width: 33%;
+                padding: 10px;
+                box-sizing: border-box;
+            }
 
-    <%@ include file="footer.html" %>
-</body>
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .image-container figcaption {
+                margin-top: 10px;
+                font-style: italic;
+            }
+        </style>
+
+        <div class="image-container">
+            <img src="attivita1.jpg">
+            <figcaption>
+                Creare centri di apprendimento dove i bambini svantaggiati possono ricevere supporto scolastico.
+            </figcaption>
+        </div>
+
+        <div class="image-container">
+            <img src="attivita2.jpg">
+            <figcaption>
+                Fornire materiale didattico e libri ai bambini provenienti da famiglie a basso reddito.
+            </figcaption>
+        </div>
+
+        <div class="image-container">
+            <img src="attivita3.jpg">
+            <figcaption>
+                Collaborare con le scuole locali per implementare programmi educativi supplementari e migliorare l'accesso all'istruzione.
+            </figcaption>
+        </div>
+
+
+        <%@ include file="footer.html" %>
+    </body>
 </html>
