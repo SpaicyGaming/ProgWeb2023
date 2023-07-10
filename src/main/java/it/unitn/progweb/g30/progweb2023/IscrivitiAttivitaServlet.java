@@ -25,12 +25,67 @@ public class IscrivitiAttivitaServlet extends HttpServlet {
             Statement stmt = conn.createStatement();
             String query = String.format("SELECT * FROM ATTIVITA WHERE NOME_ATTIVITA = '%s'", act);
             ResultSet rs = stmt.executeQuery(query);
-            if(rs.next() && !ud.isUserSubscribedToActivity(loggedUser, act)) {
+            boolean activityExist = rs.next();
+
+            /*
+
+            if(!activityExist || !ud.isUserSubscribedToActivity(loggedUser, act)){
+                if(!activityExist){
+                    stmt = conn.createStatement();
+                    query = String.format("INSERT INTO ATTIVITA VALUES(DEFAULT, '%s')", act);
+                    stmt.execute(query);
+
+                    stmt = conn.createStatement();
+                    query = String.format("SELECT * FROM ATTIVITA WHERE NOME_ATTIVITA = '%s'", act);
+                    rs = stmt.executeQuery(query);
+                    rs.next();
+                }
+
                 int actId = rs.getInt(1);
                 stmt = conn.createStatement();
                 query = String.format("INSERT INTO USERSXATTIVITA VALUES(DEFAULT, %d, %d)", loggedUser.getId(), actId);
                 stmt.execute(query);
             }
+            */
+
+
+            if(!activityExist){
+                stmt = conn.createStatement();
+                query = String.format("INSERT INTO ATTIVITA VALUES(DEFAULT, '%s')", act);
+                stmt.execute(query);
+
+                stmt = conn.createStatement();
+                query = String.format("SELECT * FROM ATTIVITA WHERE NOME_ATTIVITA = '%s'", act);
+                rs = stmt.executeQuery(query);
+                rs.next();
+            }
+
+            if(!ud.isUserSubscribedToActivity(loggedUser, act)){
+                int actId = rs.getInt(1);
+                stmt = conn.createStatement();
+                query = String.format("INSERT INTO USERSXATTIVITA VALUES(DEFAULT, %d, %d)", loggedUser.getId(), actId);
+                stmt.execute(query);
+            }
+
+            /*
+
+            if(activityExist && !ud.isUserSubscribedToActivity(loggedUser, act)) {
+                int actId = rs.getInt(1);
+                stmt = conn.createStatement();
+                query = String.format("INSERT INTO USERSXATTIVITA VALUES(DEFAULT, %d, %d)", loggedUser.getId(), actId);
+                stmt.execute(query);
+            }else if(!activityExist){
+                stmt = conn.createStatement();
+                query = String.format("INSERT INTO ATTIVITA VALUES(DEFAULT, '%s')", act);
+                stmt.execute(query);
+
+                stmt = conn.createStatement();
+                query = String.format("SELECT * FROM ATTIVITA WHERE NOME_ATTIVITA = '%s'", act);
+                rs = stmt.executeQuery(query);
+                rs.next();
+            }
+            */
+
         }catch(Exception e){
             e.printStackTrace();
         }

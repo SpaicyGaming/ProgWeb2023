@@ -1,7 +1,7 @@
-Wed Jun 07 15:39:25 CEST 2023 : Server di rete Apache Derby: 10.16.1.1 - (1901046) avviato e pronto ad accettare connessioni sulla porta 1527
+Mon Jul 10 03:54:11 CEST 2023 : Server di rete Apache Derby: 10.16.1.1 - (1901046) avviato e pronto ad accettare connessioni sulla porta 1527
 ----------------------------------------------------------------
-Wed Jun 07 15:42:14 CEST 2023:
-Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): istanza a816c00e-0188-9615-685e-0000038933e8
+Mon Jul 10 03:55:35 CEST 2023:
+Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): istanza a816c00e-0189-3d81-994e-00000389cfb0
 sulla directory di database C:\Users\asus\Desktop\ProgWeb2023\Tum4WorldDB con caricatore classi jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 
 Caricato da file:/C:/Apache/db-derby-10.16.1.1-bin/lib/derby.jar
 java.vendor=Oracle Corporation
