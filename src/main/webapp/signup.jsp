@@ -9,12 +9,52 @@
 <html>
 <head>
     <title>Title</title>
+
+     <script>
+        function validateForm() {
+            let x = new Date(document.getElementById("bd").value);
+            let now = new Date(Date.now());
+            now.setFullYear(now.getFullYear()-18);
+            if (now.getTime() < x.getTime()) {
+                document.getElementById("bddiv").innerHTML = "Non puoi iscriverti: non sei maggiorenne";
+                return false;
+            }else document.getElementById("bddiv").innerHTML = "";
+
+
+            let a = document.getElementById("password").value;
+            let b = document.getElementById("confermaPassword").value;
+            if (a.length < 8) {
+                document.getElementById("pass").innerHTML = "La password scelta non ha almeno 8 caratteri";
+                return false;
+            }else document.getElementById("pass").innerHTML = "";
+
+            if (a != b) {
+                document.getElementById("pass").innerHTML = "Le due password non coincidono";
+                return false;
+            }else document.getElementById("pass").innerHTML = "";
+
+            let lower=false;
+            let upper=false;
+            let special=false //special tra $!?
+
+            lower = /[a-z]/.test(a);
+            upper = /[A-Z]/.test(a);
+            special = /[$!?]/.test(a);
+            if (! (lower && upper && special)) {
+                document.getElementById("pass").innerHTML = "Bisogna avere nella password almeno una maiuscola, minuscola e uno tra $!?";
+                return false;
+            }else document.getElementById("pass").innerHTML = "";
+
+            return true;
+        }
+    </script>
+
 </head>
 <body>
     <%@ include file="intestazione.html" %>
     <jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
 
-    <form method="POST" action="SignUpServlet">
+    <form name="signUpForm" method="POST" action="SignUpServlet" onsubmit="return validateForm();">
         <label for="nome">nome:</label><br>
         <input type="text" id="nome" name="nome" required><br><br>
 
@@ -24,6 +64,7 @@
         <label for="username">username:</label><br>
         <input type="text" id="username" name="username" required> <%=errorMessage%> <br><br>
 
+        <div id="bddiv" style="color: red; font-size: medium;"></div>
         <label for="bd">data di nascita:</label><br>
         <input type="date" id="bd" name="bd" required><br><br>
 
@@ -39,6 +80,7 @@
         <input type="radio" id="aderente" name="userType" value="aderente" required>
         <label for="aderente">aderente</label><br><br>
 
+        <div id="pass" style="color: red; font-size: medium;"></div>
         <label for="password">password:</label><br>
         <input type="password" id="password" name="password" required><br><br>
 
