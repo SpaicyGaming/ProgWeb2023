@@ -9,39 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Ora dalla pagina dell'admin si possono vedere e consultare le visualizzazioni delle pagine.">
-      <change afterPath="$PROJECT_DIR$/db-start.bat" afterDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c411.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c421.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c421.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5a0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5a0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5b1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5c1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5c1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/IscrivitiAttivitaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/IscrivitiAttivitaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +202,8 @@
       <workItem from="1686143075504" duration="11800000" />
       <workItem from="1688572428102" duration="2886000" />
       <workItem from="1688832961241" duration="3319000" />
-      <workItem from="1688944527697" duration="2524000" />
+      <workItem from="1688944527697" duration="5064000" />
+      <workItem from="1688959325300" duration="4354000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -272,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686166446567</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Conclusa iscrizione alle attività">
+      <created>1688955431271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688955431271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +267,9 @@
     <MESSAGE value="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima." />
     <MESSAGE value="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni." />
     <MESSAGE value="Ora dalla pagina dell'admin si possono vedere e consultare le visualizzazioni delle pagine." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ora dalla pagina dell'admin si possono vedere e consultare le visualizzazioni delle pagine." />
+    <MESSAGE value="Conclusa iscrizione alle attività" />
+    <MESSAGE value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
+    <option name="LAST_COMMIT_MESSAGE" value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
