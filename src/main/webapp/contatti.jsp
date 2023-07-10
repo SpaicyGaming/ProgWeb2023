@@ -11,10 +11,11 @@
     <title>Tum4World</title>
     <link rel="icon" href="logo.png">
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <%@ include file="intestazione.html" %>
-
+<div class="maintext">
     <form action="mailto:admin@admin.com" method="post" enctype="text/plain">
         <label for="nomeCognome">Inserire nome e cognome:</label><br>
         <input type="text" id="nomeCognome" name="nomeCognome" required><br><br>
@@ -37,7 +38,7 @@
         <input type="submit" name="submission" value="Invia"><br>
         <input type="reset" name="reset" value="Resetta i campi"><br>
     </form>
-
+</div>
     <%@ include file="footer.html" %>
 </body>
 </html>
