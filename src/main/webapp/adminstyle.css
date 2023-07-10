@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color:rgb(255, 205, 208);
+    color:rgba(0, 0, 0, 0.804);
+}
+
+div.header {
+    height: 30%;
+}
+
+div.header table{
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e4360f; 
+    display: table;
+}
+
+div.header tbody{
+    height: inherit;
+    width: inherit;
+    display: table;
+}
+
+
+div.header img {
+    width: 20%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+div.header div {
+    text-align: center;
+    margin-bottom: 15px;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+div.header ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 10%;
+    display: flex;
+    height: 100%;
+}
+  
+div.header li {
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  
+div.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
+}
+
+p#quoteBox {
+    font-style:italic;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+div.maintext{
+    margin: 15px;
+    padding: 15px;
+}
+
+div.footer {
+    width: 100%;
+    background-color: rgb(187, 185, 185);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div.footer p {
+    text-align: center;
+}
