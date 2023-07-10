@@ -39,7 +39,7 @@
         </style>
 
         <div class="image-container">
-            <a href="attivita1.html">
+            <a href="attivita1.jsp">
                 <img src="attivita1.jpg" alt="Attività 1">
             </a>
             <figcaption>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="image-container">
-            <a href="attivita2.html">
+            <a href="attivita2.jsp">
                 <img src="attivita2.jpg" alt="Attività 2">
             </a>
             <figcaption>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="image-container">
-            <a href="attivita3.html">
+            <a href="attivita3.jsp">
                 <img src="attivita3.jpg" alt="Attività 3">
             </a>
             <figcaption>

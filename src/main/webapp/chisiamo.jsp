@@ -26,6 +26,14 @@
         Unisciti a noi in questa missione di dare alle future generazioni il dono dell'educazione. Insieme possiamo illuminare il cammino di tanti bambini e costruire un futuro più luminoso e promettente per tutti.</p>
         </p>
 
+        <div>
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+            <img src="">
+        </div>
+
         <%@ include file="footer.html" %>
     </body>
 </html>
