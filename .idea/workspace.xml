@@ -11,11 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,12 +90,11 @@
   </component>
   <component name="RunManager">
     <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProgWeb2023_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="ProgWeb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/ProgWeb2023_war" />
+            <option name="CONTEXT_PATH" value="/ProgWeb2023" />
           </settings>
         </artifact>
       </deployment>
@@ -203,7 +199,7 @@
       <workItem from="1688572428102" duration="2886000" />
       <workItem from="1688832961241" duration="3319000" />
       <workItem from="1688944527697" duration="5064000" />
-      <workItem from="1688959325300" duration="4354000" />
+      <workItem from="1688959325300" duration="6133000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -254,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688955431271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client.">
+      <created>1688963831609</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688963831609</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
