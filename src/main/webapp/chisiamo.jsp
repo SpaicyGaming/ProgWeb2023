@@ -26,12 +26,14 @@
         Unisciti a noi in questa missione di dare alle future generazioni il dono dell'educazione. Insieme possiamo illuminare il cammino di tanti bambini e costruire un futuro più luminoso e promettente per tutti.</p>
         </p>
 
-        <div>
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src="">
+        <div style="padding-top: 3%">
+            <img src="img2.jpg" style="float:left; width:20%">
+            <img src="img4.jpg" style="float:left; width:20%">
+            <img src="img6.jpg" style="float:left; width:20%">
+            <img src="img7.jpg" style="float:left; width:20%">
+            <img src="img1.jpg" style="float:left; width:20%">
+            <img src="img3.jpg" style="float:left; width:20%">
+            <img src="img5.jpg" style="float:left; width:20%">
         </div>
 
         <%@ include file="footer.html" %>
