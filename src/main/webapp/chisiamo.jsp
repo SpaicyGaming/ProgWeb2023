@@ -12,10 +12,11 @@
         <title>Tum4World</title>
         <link rel="icon" href="logo.png">
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <%@ include file="intestazione.html" %>
-
+    <div class="maintext">
         <h1>Chi è Tum4Wordls ?</h1>
         <p>Siamo un'organizzazione dedicata a portare luce e speranza alle comunità dei paesi meno sviluppati attraverso l'educazione dei bambini. Il nostro approccio unico si basa sull'empowerment dei bambini come agenti di cambiamento nelle loro comunità.
         </p>
@@ -28,7 +29,7 @@
         <p>La nostra associazione è impegnata a creare un impatto duraturo. Ciò significa lavorare a stretto contatto con le comunità locali per sviluppare progetti sostenibili e coinvolgere i genitori nella formazione e nel sostegno continuo all'educazione dei loro figli. Vogliamo creare una rete di apprendimento che si estenda ben oltre le mura delle aule scolastiche.
         </p>
         <p>Unisciti a noi in questa missione di dare alle future generazioni il dono dell'educazione. Insieme possiamo illuminare il cammino di tanti bambini e costruire un futuro più luminoso e promettente per tutti.</p>
-    </p>
+    </p></div>
         <%@ include file="footer.html" %>
     </body>
 </html>
