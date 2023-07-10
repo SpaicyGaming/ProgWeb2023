@@ -11,10 +11,11 @@
     <title>Tum4World</title>
     <link rel="icon" href="logo.png">
     <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <%@ include file="intestazione.html" %>
-
+<div class="maintext">
     <table>
         <tr>
             <td style="border: 10px">
@@ -43,7 +44,7 @@
             </td>
         </tr>
     </table>
-
+</div>
     <%@ include file="footer.html" %>
 </body>
 </html>
