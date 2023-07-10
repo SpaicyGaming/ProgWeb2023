@@ -5,10 +5,11 @@
         <title>Tum4World</title>
         <link rel="icon" href="logo.png">
         <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <%@ include file="intestazione.html" %>
-
+    <div class="maintext">
         <h1>Home Page</h1>
         <p>qui ci andranno:</p>
         <ul>
@@ -25,7 +26,7 @@
             </li>
             <li>immagine rappresentativa dell'associazione</li>
         </ul>
-
+    </div>
 
         <%@ include file="footer.html" %>
 
