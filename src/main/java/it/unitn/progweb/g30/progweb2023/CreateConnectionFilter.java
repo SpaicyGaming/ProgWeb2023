@@ -30,6 +30,7 @@ public class CreateConnectionFilter implements Filter {
             }catch(Exception e){
                 e.printStackTrace();
             }
+            session.setMaxInactiveInterval(3600);
         }
         ((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());
         chain.doFilter(request, response);
