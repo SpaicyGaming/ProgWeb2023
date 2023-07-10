@@ -39,6 +39,8 @@ button {
 
 label {
     font-size: 130%;
+    margin-top: 15px;
+    margin-bottom: 3px;
 }
 
 textarea {
@@ -60,6 +62,10 @@ select {
     border-width: 1px;
     border-radius: 10px;
     font-size: 130%;
+}
+
+#simpatizzante {
+    padding-top: 25px;
 }
 
 form {

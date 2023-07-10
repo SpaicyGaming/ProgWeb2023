@@ -39,21 +39,27 @@
         </style>
 
         <div class="image-container">
-            <img src="attivita1.jpg">
+            <a href="attivita1.html">
+                <img src="attivita1.jpg" alt="Attività 1">
+            </a>
             <figcaption>
                 Creare centri di apprendimento dove i bambini svantaggiati possono ricevere supporto scolastico.
             </figcaption>
         </div>
 
         <div class="image-container">
-            <img src="attivita2.jpg">
+            <a href="attivita2.html">
+                <img src="attivita2.jpg" alt="Attività 2">
+            </a>
             <figcaption>
                 Fornire materiale didattico e libri ai bambini provenienti da famiglie a basso reddito.
             </figcaption>
         </div>
 
         <div class="image-container">
-            <img src="attivita3.jpg">
+            <a href="attivita3.html">
+                <img src="attivita3.jpg" alt="Attività 3">
+            </a>
             <figcaption>
                 Collaborare con le scuole locali per implementare programmi educativi supplementari e migliorare l'accesso all'istruzione.
             </figcaption>

@@ -19,10 +19,10 @@
 
         <form action="mailto:admin@admin.com" method="post" enctype="text/plain">
             <label for="nomeCognome">Inserire nome e cognome:</label>
-            <input type="text" id="nomeCognome" name="nomeCognome" required><br><br>
+            <input type="text" id="nomeCognome" name="nomeCognome" required>
 
-            <label for="Email">Inserire il proprio indirizzo email per essere ricontattati:</label><br>
-            <input type="email" id="Email" name="Email" required><br><br>
+            <label for="Email">Inserire il proprio indirizzo email per essere ricontattati:</label>
+            <input type="email" id="Email" name="Email" required>
 
             <label for="motivazione">Inserire il motivo:</label>
             <select name="motivazione" id="motivazione" required>
@@ -30,14 +30,14 @@
                 <option value="OpzioneB">OpzioneB</option>
                 <option value="OpzioneC">OpzioneC</option>
                 <option value="Altro">Altro</option>
-            </select><br><br>
+            </select>
 
-            <label for="specifico">Spiegare il problema:</label><br>
-            <textarea id="specifico" name="specifico" rows="4" cols="50"></textarea><br><br>
+            <label for="specifico">Spiegare il problema:</label>
+            <textarea id="specifico" name="specifico" rows="4" cols="50"></textarea>
 
 
-            <input type="submit" name="submission" value="Invia"><br>
-            <input type="reset" name="reset" value="Resetta i campi"><br>
+            <input type="submit" name="submission" value="Invia" style="margin-top: 25px; margin-bottom: 3px;">
+            <input type="reset" name="reset" value="Resetta i campi" style="margin-top: 15px; margin-bottom: 3px;">
         </form>
 
         <%@ include file="footer.html" %>
