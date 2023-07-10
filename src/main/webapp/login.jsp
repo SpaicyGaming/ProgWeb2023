@@ -8,7 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Tum4World</title>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8"/>
 </head>
 <body>
 <%@ include file="intestazione.html" %>

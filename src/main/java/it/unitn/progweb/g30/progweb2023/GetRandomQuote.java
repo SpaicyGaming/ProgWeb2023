@@ -12,16 +12,16 @@ public class GetRandomQuote extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] quoteArr = new String[10];
-        quoteArr[0] = "Il mondo va aiutato";
-        quoteArr[1] = "Tum4World è un nome bellissimo per un'associazione";
-        quoteArr[2] = "Dovrei perdere qualche chilo";
-        quoteArr[3] = "Ho sempre bisogno di aiutare il prossimo";
-        quoteArr[4] = "Diffondete la voce";
-        quoteArr[5] = "Ci sono persone che hanno bisogno di aiuto";
-        quoteArr[6] = "Non mi prenderete mai";
-        quoteArr[7] = "Salviamo il mondo!";
-        quoteArr[8] = "Portiamo questo fardello insieme";
-        quoteArr[9] = "La gioia di aiutare il prossimo";
+        quoteArr[0] = "Educare è come seminare: il frutto non è garantito e non è immediato, ma se non si semina è certo che non ci sarà raccolto.";
+        quoteArr[1] = "Tutto quello che ho per difendermi è l'alfabeto; è quanto mi hanno dato al posto di un fucile.";
+        quoteArr[2] = "Dove c'è l'educazione non c'è distinzione di classe.";
+        quoteArr[3] = "Educare non significa riempire un secchio, ma accendere una fiamma.";
+        quoteArr[4] = "Educare significa tirare fuori il talento di ognuno, il suo grado di libertà, la strada per apprendere davvero.";
+        quoteArr[5] = "Si educa molto con quello che si dice, ancor più con quel che si fa, molto più con quel che si è.";
+        quoteArr[6] = "L'educazione fa di ciascuno di noi un pezzo dell'ingranaggio e non un individuo.";
+        quoteArr[7] = "L'educazione è ciò che la maggior parte delle persone riceve, molti trasmettono e pochi possiedono.";
+        quoteArr[8] = "Educare la mente senza educare il cuore non è affatto un’educazione.";
+        quoteArr[9] = "L'educazione è il pane dell'anima.";
 
         response.setContentType("application/json");
         response.setCharacterEncoding("utf-8");

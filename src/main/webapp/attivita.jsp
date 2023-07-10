@@ -8,10 +8,41 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Tum4World</title>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8"/>
 </head>
 <body>
     <%@ include file="intestazione.html" %>
+
+    <table>
+        <tr>
+            <td style="border: 10px">
+                <div>
+                    <img src="logo_htmlit.png">
+                    <figcaption>
+                        Creare centri di apprendimento dove i bambini svantaggiati possono ricevere supporto scolastico.
+                    </figcaption>
+                </div>
+            </td>
+            <td style="border: 10px">
+                <div>
+                    <img src="logo_htmlit.png">
+                    <figcaption>
+                        Fornire materiale didattico e libri ai bambini provenienti da famiglie a basso reddito.
+                    </figcaption>
+                </div>
+            </td>
+            <td style="border: 10px">
+                <div>
+                    <img src="logo_htmlit.png">
+                    <figcaption>
+                        Collaborare con le scuole locali per implementare programmi educativi supplementari e migliorare l'accesso all'istruzione.
+                    </figcaption>
+                </div>
+            </td>
+        </tr>
+    </table>
 
     <%@ include file="footer.html" %>
 </body>

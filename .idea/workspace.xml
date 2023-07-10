@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="ProgWeb2023:war" />
+      <artifact name="progweb2023:war" />
+      <artifact name="progweb2023:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client.">
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni.">
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetDonationsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetViewsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetRandomQuote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/GetRandomQuote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +44,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6bbd0751-deb8-40f4-b8f9-9f58a3c8541e" />
+        <option name="url" value="https://github.com/SpaicyGaming/ProgWeb2023.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -44,6 +66,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2PbMdJa2h7RuGGii0vpoQ0BATu7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -61,13 +86,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/asus/Desktop/ServletFinal&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giulia/IdeaProjects/ProgWeb2023/src/main/webapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
@@ -81,6 +106,9 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giulia\IdeaProjects\ProgWeb2023\src\main\webapp" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\asus\Desktop\ProgWeb2023\target\progweb2023-1.0-SNAPSHOT\WEB-INF\lib" />
     </key>
@@ -92,13 +120,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ProgWeb2023_war/" />
+    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/progweb2023_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="ProgWeb2023:war">
+        <artifact name="progweb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/ProgWeb2023_war" />
+            <option name="CONTEXT_PATH" value="/progweb2023_war" />
           </settings>
         </artifact>
       </deployment>
@@ -178,6 +206,7 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="progweb2023:war exploded" />
           <artifact name="ProgWeb2023:war" />
+          <artifact name="progweb2023:war" />
         </option>
       </method>
     </configuration>
@@ -199,11 +228,9 @@
       <workItem from="1686000672203" duration="7809000" />
       <workItem from="1686057710576" duration="6165000" />
       <workItem from="1686064781457" duration="23826000" />
-      <workItem from="1686143075504" duration="11800000" />
-      <workItem from="1688572428102" duration="2886000" />
-      <workItem from="1688832961241" duration="3319000" />
-      <workItem from="1688944527697" duration="5064000" />
-      <workItem from="1688959325300" duration="4354000" />
+      <workItem from="1686143075504" duration="10534000" />
+      <workItem from="1688565867045" duration="17000" />
+      <workItem from="1688565982865" duration="3868000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -240,21 +267,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686107079815</updated>
     </task>
-    <task id="LOCAL-00006" summary="Ora dalla pagina dell'admin si possono vedere e consultare le visualizzazioni delle pagine.">
-      <created>1686166446567</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686166446567</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Conclusa iscrizione alle attività">
-      <created>1688955431271</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1688955431271</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,10 +279,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="Aggiunto il login e le pagine private (tranne quella dell'admin) con bottoni funzionanti (elimina profilo, visulizza le info personali, ecc) tranne quelli per l'iscrizione alle attività.&#10;Da aggiungere le attività e le funzionalità dell'admin.&#10;Il front end apparte le pagine aggiunte è ai livelli di prima." />
     <MESSAGE value="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni." />
-    <MESSAGE value="Ora dalla pagina dell'admin si possono vedere e consultare le visualizzazioni delle pagine." />
-    <MESSAGE value="Conclusa iscrizione alle attività" />
-    <MESSAGE value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
-    <option name="LAST_COMMIT_MESSAGE" value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
+    <option name="LAST_COMMIT_MESSAGE" value="Il db ora è salvato all'interno del progetto (ma non è embedded).&#10;Aggiunte le funzionalità dell'admin (sul frontend però si vedono i dati grezzi in json), tranne quella per vedere e resettare il numero di visualizzazioni." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
