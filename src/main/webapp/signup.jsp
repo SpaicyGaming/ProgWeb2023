@@ -15,7 +15,7 @@
         <meta charset="UTF-8"/>
     <script>
         function validateForm() {
-            let x = new Date(document.getElementById("bd").value);
+            let x = new Date(document.getElementById("bdinput").value);
             let now = new Date(Date.now());
             now.setFullYear(now.getFullYear()-18);
             if (now.getTime() < x.getTime()) {
@@ -66,9 +66,9 @@
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required> <%=errorMessage%>
 
-        <div id="bd" style="color: red; font-size: medium;"></div>
-        <label for="bd">Data di nascita:</label>
-        <input type="date" id="bd" name="bd" required>
+        <div id="bddiv" style="color: red; font-size: medium;"></div>
+        <label for="bdinput">Data di nascita:</label>
+        <input type="date" id="bdinput" name="bdinput" required>
 
         <label for="mail">Email:</label>
         <input type="email" id="mail" name="mail" required>
