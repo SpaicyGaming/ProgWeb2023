@@ -11,7 +11,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Tum4World</title>
-        <link rel="icon" href="logo.png">
+        <link rel="icon" href="images/logo.png">
         <meta charset="UTF-8"/>
     </head>
     <body>
@@ -44,22 +44,22 @@
 
         <div style="padding-left: 2%; padding-top: 3%">
             <div class="image-container">
-                <img src="img1.jpg">
+                <img src="images/img1.jpg">
             </div>
             <div class="image-container">
-                <img src="img2.jpg">
+                <img src="images/img2.jpg">
             </div>
             <div class="image-container">
-                <img src="img3.jpg">
+                <img src="images/img3.jpg">
             </div>
             <div class="image-container">
-                <img src="img4.jpg">
+                <img src="images/img4.jpg">
             </div>
             <div class="image-container">
-                <img src="img5.jpg">
+                <img src="images/img5.jpg">
             </div>
             <div class="image-container">
-                <img src="img6.jpg">
+                <img src="images/img6.jpg">
             </div>
         </div>
 

@@ -4,14 +4,14 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Tum4World</title>
-        <link rel="icon" href="logo.png">
+        <link rel="icon" href="images/logo.png">
         <meta charset="UTF-8"/>
     </head>
     <body>
         <jsp:include page="intestazione.jsp" />
 
         <div class="container" style="padding-top: 3%">
-            <img class="image" src="attivita2.jpg" alt="Immagine" style="width: 25%; padding-left: 2%; float: left">
+            <img class="image" src="images/attivita2.jpg" alt="Immagine" style="width: 25%; padding-left: 2%; float: left">
 
             <div class="content">
 

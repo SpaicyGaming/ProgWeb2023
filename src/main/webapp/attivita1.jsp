@@ -4,14 +4,14 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Tum4World</title>
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
 </head>
 <body>
     <jsp:include page="intestazione.jsp" />
 
     <div class="container" style="padding-top: 3%">
-        <img class="image" src="attivita1.jpg" style="width: 25%; padding-left: 2%; float: left">
+        <img class="image" src="images/attivita1.jpg" style="width: 25%; padding-left: 2%; float: left">
 
         <p class="description" style="padding-left: 30%">
             Nasce un luogo di speranza, dove i sorrisi dei bambini risplendono senza fine. I centri di apprendimento sorgono come faro di luce per i piccoli cuori svantaggiati, offrendo loro il sostegno scolastico tanto necessario.

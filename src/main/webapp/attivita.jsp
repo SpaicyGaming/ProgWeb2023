@@ -11,7 +11,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Tum4World</title>
-        <link rel="icon" href="logo.png">
+        <link rel="icon" href="images/logo.png">
         <meta charset="UTF-8"/>
     </head>
     <body>
@@ -40,7 +40,7 @@
 
         <div class="image-container">
             <a href="<%=response.encodeURL("attivita1.jsp")%>">
-                <img src="attivita1.jpg" alt="Attività 1">
+                <img src="images/attivita1.jpg" alt="Attività 1">
             </a>
             <figcaption>
                 Creare centri di apprendimento dove i bambini svantaggiati possono ricevere supporto scolastico.
@@ -49,7 +49,7 @@
 
         <div class="image-container">
             <a href="<%=response.encodeURL("attivita2.jsp")%>">
-                <img src="attivita2.jpg" alt="Attività 2">
+                <img src="images/attivita2.jpg" alt="Attività 2">
             </a>
             <figcaption>
                 Fornire materiale didattico e libri ai bambini provenienti da famiglie a basso reddito.
@@ -58,7 +58,7 @@
 
         <div class="image-container">
             <a href="<%=response.encodeURL("attivita3.jsp")%>">
-                <img src="attivita3.jpg" alt="Attività 3">
+                <img src="images/attivita3.jpg" alt="Attività 3">
             </a>
             <figcaption>
                 Collaborare con le scuole locali per implementare programmi educativi supplementari e migliorare l'accesso all'istruzione.

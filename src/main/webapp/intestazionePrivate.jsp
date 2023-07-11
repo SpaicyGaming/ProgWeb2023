@@ -11,7 +11,7 @@
     <tbody>
     <tr>
       <td style="width: 20%;">
-        <img src="logo.png"/>
+        <img src="images/logo.png"/>
         <div>Tum4World</div>
       </td>
       <td style="width: 80%; height: 100%;">
