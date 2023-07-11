@@ -8,7 +8,7 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <div class="container" style="padding-top: 3%">
             <img class="image" src="attivita2.jpg" alt="Immagine" style="width: 25%; padding-left: 2%; float: left">
