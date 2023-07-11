@@ -17,7 +17,7 @@
     <body>
         <jsp:include page="intestazione.jsp" />
 
-        <form action="mailto:admin@admin.com" method="post" enctype="text/plain">
+        <form action="mailto:tum4world@nessunonoluogonoesiste.com" method="post" enctype="text/plain">
             <label for="nomeCognome">Inserire nome e cognome:</label>
             <input type="text" id="nomeCognome" name="nomeCognome" required>
 

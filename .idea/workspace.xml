@@ -10,12 +10,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Piccolo merge">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Ho sistemato la pagina chisiamo">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img7.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689038951051</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Ho sistemato la pagina chisiamo">
+      <created>1689093910741</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1689093910741</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +314,8 @@
     <MESSAGE value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
     <MESSAGE value="Ora il sito funziona anche con i cookie disabilitati" />
     <MESSAGE value="Piccolo merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Piccolo merge" />
+    <MESSAGE value="Ho sistemato la pagina chisiamo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ho sistemato la pagina chisiamo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

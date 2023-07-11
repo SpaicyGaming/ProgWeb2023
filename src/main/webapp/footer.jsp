@@ -13,20 +13,21 @@
 
 <!--<script src="./javascript/cookieManager.js"></script>-->
 <div class="cookieBanner" id="cb1">
-  Acconsenti all'utilizzo dei cookies? <br>
+  <p style="padding-left: 2%">Acconsenti all'utilizzo dei cookies?</p>
   <!--
   <button onclick="allowCookies()">Allow</button>
   <button onclick="denyCookies()">Deny</button>
   -->
-  <form method="post" action="CookieServlet">
-    <input type="submit" value="allow" name="choice">
-    <input type="submit" value="deny" name="choice">
+  <form method="post" action="CookieServlet" style="padding-top: 1%; float: left; padding-left: 2%">
+      <div>
+          <div style="float: left">
+              <input type="submit" value="Accetta" name="choice">
+          </div>
+          <div style="padding-top: 1%">
+              <input type="submit" value="Rifiuta" name="choice">
+          </div>
+      </div>
   </form>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 </div>
 <%
   }
