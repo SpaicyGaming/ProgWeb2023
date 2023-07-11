@@ -27,7 +27,8 @@ public class LoginServlet extends HttpServlet {
         }else{
             HttpSession session = request.getSession();
             session.setAttribute("loggedUser", u);
-            response.sendRedirect("PrivateAreaServlet");
+            //System.out.println(((User)session.getAttribute("loggedUser")).getUsername());
+            response.sendRedirect(response.encodeURL("PrivateAreaServlet"));
         }
     }
 }

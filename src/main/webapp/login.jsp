@@ -16,10 +16,10 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
         <jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
         <div class="maintext">
-            <form method="POST" action="LoginServlet">
+            <form method="POST" action="<%=response.encodeURL("LoginServlet")%>">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
 

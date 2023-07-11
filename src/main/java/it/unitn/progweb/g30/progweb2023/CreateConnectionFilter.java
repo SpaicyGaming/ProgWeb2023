@@ -32,7 +32,7 @@ public class CreateConnectionFilter implements Filter {
             }
             session.setMaxInactiveInterval(3600);
         }
-        ((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());
+        //((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());
         chain.doFilter(request, response);
     }
 }

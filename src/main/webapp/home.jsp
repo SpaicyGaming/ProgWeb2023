@@ -42,7 +42,7 @@
         </style>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <div class="container">
             <img class="image" src="imgDescrittiva.jpg" alt="Immagine" style="width: 25%">

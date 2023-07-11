@@ -1,6 +1,6 @@
 function displayAllUsers(){
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "GetAllUsersServlet", true);
+    xhttp.open("GET", encodeMyURL("GetAllUsersServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
@@ -12,7 +12,7 @@ function displayAllUsers(){
 
 function displayAllSimpatizzanti(){
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "GetAllSimpatizzantiServlet", true);
+    xhttp.open("GET", encodeMyURL("GetAllSimpatizzantiServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
@@ -24,7 +24,7 @@ function displayAllSimpatizzanti(){
 
 function displayAllAderenti(){
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "GetAllAderentiServlet", true);
+    xhttp.open("GET", encodeMyURL("GetAllAderentiServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
@@ -37,13 +37,13 @@ function displayAllAderenti(){
 function displayViews(){
     document.getElementById("resultContainer").innerHTML = "Loading...";
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "GetViewsServlet", true);
+    xhttp.open("GET", encodeMyURL("GetViewsServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
             let link = document.createElement("a");
             let btn = document.createElement("button");
-            link.setAttribute("href", "ResetViewsServlet");
+            link.setAttribute("href", encodeMyURL("ResetViewsServlet"));
             link.appendChild(btn);
             btn.innerText = "reset";
             let btnDiv = document.createElement("div");
@@ -66,7 +66,7 @@ function displayViews(){
 
 function displayDonations(){
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "GetDonationsServlet", true);
+    xhttp.open("GET", encodeMyURL("GetDonationsServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
@@ -74,4 +74,20 @@ function displayDonations(){
         }
     }
     xhttp.send();
+}
+
+function encodeMyURL(path){
+    let url = window.location.href;
+    let startAt = -1;
+    for(let i = 0; i < url.length; i++){
+        if(url[i] === ';'){
+            startAt = i;
+        }
+    }
+
+    if(startAt > -1) {
+        return path + url.substring(startAt, url.length);
+    }else{
+        return path;
+    }
 }

@@ -1,6 +1,6 @@
 function donationTool(){
     let xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "donationTool.jsp", true);
+    xhttp.open("GET", encodeMyURL("donationTool.jsp"), true);
     xhttp.responseType = "text";
     xhttp.onreadystatechange = function(){
         if(xhttp.readyState === 4 && xhttp.status === 200){
@@ -10,4 +10,20 @@ function donationTool(){
         }
     }
     xhttp.send();
+}
+
+function encodeMyURL(path){
+    let url = window.location.href;
+    let startAt = -1;
+    for(let i = 0; i < url.length; i++){
+        if(url[i] === ';'){
+            startAt = i;
+        }
+    }
+
+    if(startAt > -1) {
+        return path + url.substring(startAt, url.length);
+    }else{
+        return path;
+    }
 }

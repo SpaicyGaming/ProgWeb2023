@@ -15,7 +15,7 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <form action="mailto:admin@admin.com" method="post" enctype="text/plain">
             <label for="nomeCognome">Inserire nome e cognome:</label>

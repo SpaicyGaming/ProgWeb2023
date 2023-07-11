@@ -15,7 +15,7 @@
     
 </head>
 <body>
-    <%@ include file="intestazione.html" %>
+    <jsp:include page="intestazione.jsp" />
 <div class="maintext">
     <h1>Registrazione confermata</h1>
 </div>
