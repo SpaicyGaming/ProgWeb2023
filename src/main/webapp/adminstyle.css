@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color:rgb(255, 205, 208);
+    background-color:#fbd4ff;
     color:rgba(0, 0, 0, 0.804);
 }
 
@@ -21,15 +21,25 @@ body {
     font-size: 150%;
 }
 
+button {
+    text-align: center;
+    font-size: 130%;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 25vh;
+    height: 7dvh;
+}
+
 div.header {
     height: 30%;
+    font-size: 130%;
 }
 
 div.header table{
     height: 100%;
     width: 100%;
     border-collapse: collapse;
-    background-color: #e4360f; 
+    background-color: #d05edb;
     display: table;
 }
 
@@ -58,7 +68,7 @@ div.header div {
 div.header ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(187, 185, 185);
     padding-left: 10%;
     display: flex;
     height: 100%;
@@ -101,4 +111,13 @@ div.footer {
 
 div.footer p {
     text-align: center;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
 }
