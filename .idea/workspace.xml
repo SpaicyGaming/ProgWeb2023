@@ -10,10 +10,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiunte le pagine attività con relativo link">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Domani sistemo, ma ho inserito le foto nella pagina chisiamo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +215,7 @@
       <workItem from="1686143075504" duration="10534000" />
       <workItem from="1688565867045" duration="17000" />
       <workItem from="1688565982865" duration="3868000" />
-      <workItem from="1688995297486" duration="26780000" />
+      <workItem from="1688995297486" duration="26886000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -283,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689029101687</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Domani sistemo, ma ho inserito le foto nella pagina chisiamo">
+      <created>1689030157999</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689030157999</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +314,8 @@
     <MESSAGE value="aggiunta front-end" />
     <MESSAGE value="Modifiche varie css e front end" />
     <MESSAGE value="Aggiunte le pagine attività con relativo link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunte le pagine attività con relativo link" />
+    <MESSAGE value="Domani sistemo, ma ho inserito le foto nella pagina chisiamo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Domani sistemo, ma ho inserito le foto nella pagina chisiamo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
