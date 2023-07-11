@@ -18,23 +18,66 @@
         <jsp:include page="intestazione.jsp" />
 
         <h1 style="padding-top: 2%; padding-left: 3%">Chi è Tum4Wordls ?</h1>
-        <p class="description" style="padding-top: 2%">Siamo un'organizzazione dedicata a portare luce e speranza alle comunità dei paesi meno sviluppati attraverso l'educazione dei bambini. Il nostro approccio unico si basa sull'empowerment dei bambini come agenti di cambiamento nelle loro comunità.
-        Collaboriamo a stretto contatto con le scuole locali, gli insegnanti e le famiglie per creare programmi educativi su misura che affrontino le specifiche sfide e necessità di ogni comunità. Oltre all'insegnamento accademico, mettiamo l'accento sull'educazione pratica e sulla promozione delle competenze vitali, come la creatività, la collaborazione e la leadership.
-        Attraverso l'utilizzo di risorse digitali e tecnologie accessibili, raggiungiamo le comunità più remote e offriamo opportunità di apprendimento a bambini che altrimenti non avrebbero accesso a un'istruzione di qualità. Promuoviamo l'alfabetizzazione digitale e l'utilizzo responsabile delle tecnologie, preparando i bambini per un mondo in continua evoluzione.
-        Crediamo che l'educazione non si limiti alle aule scolastiche, ma si estenda anche alla sensibilizzazione sociale e all'empatia. Organizziamo progetti comunitari, attività di volontariato e scambi culturali, incoraggiando i bambini a comprendere e rispettare la diversità e a diventare cittadini globali consapevoli.
-        La nostra associazione è impegnata a creare un impatto duraturo. Ciò significa lavorare a stretto contatto con le comunità locali per sviluppare progetti sostenibili e coinvolgere i genitori nella formazione e nel sostegno continuo all'educazione dei loro figli. Vogliamo creare una rete di apprendimento che si estenda ben oltre le mura delle aule scolastiche.
-        Unisciti a noi in questa missione di dare alle future generazioni il dono dell'educazione. Insieme possiamo illuminare il cammino di tanti bambini e costruire un futuro più luminoso e promettente per tutti.</p>
-        </p>
-
-        <div style="padding-top: 3%">
-            <img src="img2.jpg" style="float:left; width:20%">
-            <img src="img4.jpg" style="float:left; width:20%">
-            <img src="img6.jpg" style="float:left; width:20%">
-            <img src="img7.jpg" style="float:left; width:20%">
-            <img src="img1.jpg" style="float:left; width:20%">
-            <img src="img3.jpg" style="float:left; width:20%">
-            <img src="img5.jpg" style="float:left; width:20%">
+        <div style="padding-top: 2%">
+            <p class="description" >
+                Siamo un'organizzazione impegnata a migliorare la vita delle comunità dei paesi meno sviluppati attraverso l'educazione dei bambini. Da oltre un decennio, abbiamo lavorato instancabilmente per portare speranza e opportunità di apprendimento a coloro che ne hanno bisogno.
+            </p>
+            <p class="description" >
+                La nostra storia ha inizio nel 2010, quando un gruppo di individui appassionati si è unito con l'obiettivo comune di creare un impatto duraturo nelle comunità svantaggiate. Abbiamo iniziato con piccoli progetti educativi locali e, col passare del tempo, siamo cresciuti ed estesi le nostre operazioni.
+            </p>
+            <p class="description" >
+                Oggi, abbiamo sedi in diverse parti del mondo, dalle zone rurali alle comunità urbane, dove collaboriamo a stretto contatto con le scuole locali, gli insegnanti e le famiglie. Questa stretta collaborazione ci permette di comprendere le specifiche sfide e necessità di ogni comunità, consentendoci di creare programmi educativi su misura.
+            </p>
+            <p class="description" >
+                Riconosciamo l'importanza di un approccio olistico all'educazione. Oltre all'insegnamento accademico, mettiamo l'accento sull'educazione pratica e sulla promozione delle competenze vitali, come la creatività, la collaborazione e la leadership. Utilizziamo risorse digitali e tecnologie accessibili per raggiungere anche le comunità più remote, offrendo opportunità di apprendimento a bambini che altrimenti non avrebbero accesso a un'istruzione di qualità.
+            </p>
+            <p class="description" >
+                Negli anni, la nostra associazione ha ricevuto riconoscimenti per il nostro impegno nel campo dell'educazione. Questi riconoscimenti ci spronano a continuare a fare la differenza nella vita dei bambini e delle loro comunità.
+            </p>
+            <p class="description" >
+                Tuttavia, l'aspetto più gratificante del nostro lavoro è vedere i sorrisi e la speranza nei volti dei bambini che beneficiano dei nostri programmi. Siamo fermamente convinti che l'educazione possa trasformare le vite e, di conseguenza, stiamo costruendo un futuro più luminoso per tutti.
+            </p>
+            <p class="description" >
+                La nostra associazione è aperta a tutti coloro che condividono la nostra visione e vogliono contribuire a portare luce e speranza nelle comunità più bisognose. Unisciti a noi in questa missione di dare alle future generazioni il dono dell'educazione e costruire insieme un mondo migliore.
+            </p>
         </div>
+
+        <div style="padding-left: 2%; padding-top: 3%">
+            <div class="image-container">
+                <img src="img1.jpg">
+            </div>
+            <div class="image-container">
+                <img src="img2.jpg">
+            </div>
+            <div class="image-container">
+                <img src="img3.jpg">
+            </div>
+            <div class="image-container">
+                <img src="img4.jpg">
+            </div>
+            <div class="image-container">
+                <img src="img5.jpg">
+            </div>
+            <div class="image-container">
+                <img src="img6.jpg">
+            </div>
+        </div>
+
+        <style>
+            .image-container {
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+                width: 15vw;
+                padding: 1vw;
+                box-sizing: border-box;
+            }
+
+            .image-container img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
 
         <jsp:include page="footer.jsp" />
     </body>
