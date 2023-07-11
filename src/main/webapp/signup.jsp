@@ -57,24 +57,24 @@
         <jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
 
 <form name="signUpForm" method="POST" action="<%=response.encodeURL("SignUpServlet")%>" onsubmit="return validateForm();">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
 
-        <label for="cognome">Cognome:</label><br>
-        <input type="text" id="cognome" name="cognome" required><br><br>
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="cognome" required>
 
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required> <%=errorMessage%> <br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required> <%=errorMessage%>
 
         <div id="bd" style="color: red; font-size: medium;"></div>
-        <label for="bd">Data di nascita:</label><br>
-        <input type="date" id="bd" name="bd" required><br><br>
+        <label for="bd">Data di nascita:</label>
+        <input type="date" id="bd" name="bd" required>
 
-        <label for="mail">Email:</label><br>
-        <input type="email" id="mail" name="mail" required><br><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail" required>
 
-        <label for="numeroDiTelefono">Recapito telefonico:</label><br>
-        <input type="tel" id="numeroDiTelefono" name="numeroDiTelefono" required><br><br>
+        <label for="numeroDiTelefono">Recapito telefonico:</label>
+        <input type="tel" id="numeroDiTelefono" name="numeroDiTelefono" required>
 
             <div style="padding-top: 2%; padding-bottom: 2%">
                 <div>
@@ -89,11 +89,11 @@
 
 
             <div id="pass" style="color: red; font-size: medium;"></div>
-          <label for="password">password:</label><br>
-          <input type="password" id="password" name="password" required><br><br>
+          <label for="password">password:</label>
+          <input type="password" id="password" name="password" required>
 
-          <label for="confermaPassword">conferma password:</label><br>
-          <input type="password" id="confermaPassword" name="confermaPassword" required><br><br>
+          <label for="confermaPassword">conferma password:</label>
+          <input type="password" id="confermaPassword" name="confermaPassword" required>
 
             <input type="submit" value="Submit" style="margin-top: 15px; margin-bottom: 3px;">
             <input type="reset" style="margin-top: 15px; margin-bottom: 10vh;">

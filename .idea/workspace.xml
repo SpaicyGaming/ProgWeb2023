@@ -10,8 +10,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Ho sistemato la pagina chisiamo">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiornato mail contatti">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689093910741</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Aggiornato mail contatti">
+      <created>1689094403302</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1689094403302</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +327,8 @@
     <MESSAGE value="Ora il sito funziona anche con i cookie disabilitati" />
     <MESSAGE value="Piccolo merge" />
     <MESSAGE value="Ho sistemato la pagina chisiamo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ho sistemato la pagina chisiamo" />
+    <MESSAGE value="Aggiornato mail contatti" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiornato mail contatti" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
