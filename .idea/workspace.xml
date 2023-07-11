@@ -3,40 +3,35 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="progweb2023:war" />
-      <artifact name="progweb2023:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Modifiche varie">
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Creato cartella immagini">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/attivita1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita1.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/attivita2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/attivita3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita3.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/img6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/imgDescrittiva.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/imgDescrittiva.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -103,6 +98,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Giulia\IdeaProjects\ProgWeb2023\src\main\webapp\images" />
       <recent name="C:\Users\asus\Desktop\ProgWeb2023\target\progweb2023-1.0-SNAPSHOT\WEB-INF\lib" />
     </key>
   </component>
@@ -111,6 +107,95 @@
       <command value="mvn clean:clean" />
       <command value="mvn clean" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="progweb2023:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/progweb2023_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="730902b6-594e-4145-9458-bb6ea3322cdb" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52336" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="progweb2023:war" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -134,6 +219,9 @@
       <workItem from="1688832961241" duration="3319000" />
       <workItem from="1688944527697" duration="5064000" />
       <workItem from="1688959325300" duration="35421000" />
+      <workItem from="1689096657804" duration="2726000" />
+      <workItem from="1689099415770" duration="984000" />
+      <workItem from="1689100496629" duration="3051000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -233,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689095225456</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Creato cartella immagini">
+      <created>1689096221636</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689096221636</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +359,8 @@
     <MESSAGE value="Ho sistemato la pagina chisiamo" />
     <MESSAGE value="Aggiornato mail contatti" />
     <MESSAGE value="Modifiche varie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiche varie" />
+    <MESSAGE value="Creato cartella immagini" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creato cartella immagini" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

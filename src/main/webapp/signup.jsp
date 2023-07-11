@@ -95,7 +95,7 @@
           <label for="confermaPassword">conferma password:</label>
           <input type="password" id="confermaPassword" name="confermaPassword" required>
 
-            <input type="submit" value="Submit" style="margin-top: 15px; margin-bottom: 3px;">
+            <input type="submit" value="Registrati" style="margin-top: 15px; margin-bottom: 3px;">
             <input type="reset" style="margin-top: 15px; margin-bottom: 10vh;">
         </form>
 

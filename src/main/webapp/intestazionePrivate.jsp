@@ -10,9 +10,9 @@
   <table>
     <tbody>
     <tr>
-      <td style="width: 20%;">
-        <img src="images/logo.png"/>
-        <div>Tum4World</div>
+      <td id = "logo"; style="vertical-align: middle; padding-bottom: 10px">
+        <!--<img src="logo.png" style="width: 150px;"/>-->
+        Tum4World
       </td>
       <td style="width: 80%; height: 100%;">
         <ul>

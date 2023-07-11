@@ -28,7 +28,7 @@
 
                 <%=errorMessage%>
 
-                <input type="submit" value="Submit" style="margin-top: 15px; margin-bottom: 3px;">
+                <input type="submit" value="Entra" style="margin-top: 15px; margin-bottom: 3px;">
             </form>
         </div>
         <jsp:include page="footer.jsp" />
