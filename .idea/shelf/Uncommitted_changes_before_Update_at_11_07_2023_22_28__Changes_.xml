@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_11_07_2023_22_28_[Changes]" date="1689107355765" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_28_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/07/2023 22:28 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Tum4WorldDB/log/log1.dat" />
+    <option name="AFTER_PATH" value="Tum4WorldDB/log/log1.dat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_28_[Changes]/log1.dat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Tum4WorldDB/seg0/c510.dat" />
+    <option name="AFTER_PATH" value="Tum4WorldDB/seg0/c510.dat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_28_[Changes]/c510.dat" />
+  </binary>
+</changelist>

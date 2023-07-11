@@ -8,16 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
-  if(!((Boolean)session.getAttribute("madeChoiceAboutCookies")).booleanValue()){
+  if(((Boolean)session.getAttribute("isSessionNew")).booleanValue()){
 %>
 
 <!--<script src="./javascript/cookieManager.js"></script>-->
 <div class="cookieBanner" id="cb1">
-  <p style="padding-left: 2%">Acconsenti all'utilizzo dei cookies?</p>
+  <p style="padding-left: 2%">Il sito non utilizza cookies al di fuori di jsessionid, che viene utilizzato per tenere traccia della sessione.
+  Il sito supporta la navigazione anco con i cookies disabilitati</p>
   <!--
   <button onclick="allowCookies()">Allow</button>
   <button onclick="denyCookies()">Deny</button>
   -->
+  <!--
   <form method="post" action="CookieServlet" style="padding-top: 1%; float: left; padding-left: 2%">
       <div>
           <div style="float: left">
@@ -28,6 +30,7 @@
           </div>
       </div>
   </form>
+  -->
 </div>
 <%
   }
