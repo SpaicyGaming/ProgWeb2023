@@ -20,7 +20,7 @@ public class SignUpServlet extends HttpServlet {
         String username = request.getParameter("username");
         String mail = request.getParameter("mail");
         String numeroDiTelefono = request.getParameter("numeroDiTelefono");
-        String bd = request.getParameter("bd");
+        String bd = request.getParameter("bdinput");
         String userType = request.getParameter("userType");
         String password = request.getParameter("password");
 
