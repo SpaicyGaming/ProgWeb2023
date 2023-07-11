@@ -9,19 +9,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiustamenti vari scritte">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Aggiustamenti colori">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_00_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_00_09__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_19_35__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_19_35__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_28__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_28__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_22_55__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_23_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_07_2023_23_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/activitySubscribeTool.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/donationTool.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/donationTool.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +213,7 @@
       <workItem from="1689096657804" duration="2726000" />
       <workItem from="1689099415770" duration="984000" />
       <workItem from="1689100496629" duration="5598000" />
-      <workItem from="1689108375166" duration="2178000" />
+      <workItem from="1689108375166" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -333,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689108332161</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Aggiustamenti colori">
+      <created>1689110830712</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1689110830712</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +375,8 @@
     <MESSAGE value="Creato cartella immagini" />
     <MESSAGE value="css private aggiornati" />
     <MESSAGE value="Aggiustamenti vari scritte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiustamenti vari scritte" />
+    <MESSAGE value="Aggiustamenti colori" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiustamenti colori" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

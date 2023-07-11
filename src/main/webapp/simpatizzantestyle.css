@@ -45,9 +45,19 @@ button {
     font-size: 130%;
     border-width: 1px;
     border-radius: 10px;
-    width: 25vh;
+    width: auto;
     height: 7dvh;
 }
+
+input{
+    text-align: center;
+    font-size: 130%;
+    border-width: 1px;
+    border-radius: 10px;
+    width: auto;
+    height: 7dvh;
+}
+
 
 div.header {
     height: 30%;

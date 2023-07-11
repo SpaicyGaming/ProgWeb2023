@@ -26,7 +26,7 @@ button {
     font-size: 130%;
     border-width: 1px;
     border-radius: 10px;
-    width: 25vh;
+    width: auto;
     height: 7dvh;
 }
 
@@ -49,6 +49,14 @@ div.header tbody{
     display: table;
 }
 
+input{
+    text-align: center;
+    font-size: 130%;
+    border-width: 1px;
+    border-radius: 10px;
+    width: auto;
+    height: 7dvh;
+}
 
 div.header img {
     width: 20%;

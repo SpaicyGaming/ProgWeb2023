@@ -12,9 +12,9 @@
 %>
 
 <!--<script src="./javascript/cookieManager.js"></script>-->
-<div class="cookieBanner" id="cb1">
-  <p style="padding-left: 2%">Il sito non utilizza cookies al di fuori di jsessionid, che viene utilizzato per tenere traccia della sessione.
-  Il sito supporta la navigazione anco con i cookies disabilitati</p>
+<div class="cookieBanner" id="cb1" style="position: fixed; bottom: 5vh; left: 0; width: 100%; padding: 15px; background-color: #f5f5f5">
+  <p style="padding-left: 1%">Il sito non utilizza cookies al di fuori di jsessionid, che viene utilizzato per tenere traccia della sessione.
+  Il sito supporta la navigazione anche con i cookies disabilitati</p>
   <!--
   <button onclick="allowCookies()">Allow</button>
   <button onclick="denyCookies()">Deny</button>
