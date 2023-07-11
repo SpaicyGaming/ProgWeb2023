@@ -59,6 +59,6 @@
             <input type="reset" style="margin-top: 15px; margin-bottom: 10vh;">
         </form>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

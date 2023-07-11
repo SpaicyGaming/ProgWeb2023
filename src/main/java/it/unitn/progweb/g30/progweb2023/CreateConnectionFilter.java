@@ -2,12 +2,16 @@ package it.unitn.progweb.g30.progweb2023;
 
 import javax.servlet.*;
 import javax.servlet.annotation.*;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+
+import static java.lang.Boolean.FALSE;
+import static java.lang.Boolean.TRUE;
 
 @WebFilter(filterName = "CreateConnectionFilter")
 public class CreateConnectionFilter implements Filter {
@@ -31,6 +35,20 @@ public class CreateConnectionFilter implements Filter {
                 e.printStackTrace();
             }
             session.setMaxInactiveInterval(3600);
+            session.setAttribute("cookiesEnabled", FALSE);
+            session.setAttribute("madeChoiceAboutCookies", FALSE);
+        }
+
+        if(session.getAttribute("cookiesEnabled") == FALSE){
+            Cookie cookies[] = ((HttpServletRequest)request).getCookies();
+            if (cookies != null) {
+                for (Cookie c : cookies) {
+                    c.setValue("");
+                    //c.setPath("/");
+                    c.setMaxAge(0);
+                    ((HttpServletResponse)response).addCookie(c);
+                }
+            }
         }
         //((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());
         chain.doFilter(request, response);

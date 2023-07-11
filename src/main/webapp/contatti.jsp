@@ -40,6 +40,6 @@
             <input type="reset" name="reset" value="Resetta i campi" style="margin-top: 15px; margin-bottom: 3px;">
         </form>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

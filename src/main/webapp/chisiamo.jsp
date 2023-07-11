@@ -36,6 +36,6 @@
             <img src="img5.jpg" style="float:left; width:20%">
         </div>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

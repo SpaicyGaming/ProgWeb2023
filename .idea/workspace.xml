@@ -9,12 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Ora il sito funziona anche con i cookie disabilitati">
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Piccolo merge">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CookieServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/javascript/cookieManager.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentePrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita1.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita2.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/attivita3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/attivita3.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/chisiamo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/contatti.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/registrazioneConfermata.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantePrivate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +39,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -201,7 +215,7 @@
       <workItem from="1688572428102" duration="2886000" />
       <workItem from="1688832961241" duration="3319000" />
       <workItem from="1688944527697" duration="5064000" />
-      <workItem from="1688959325300" duration="19941000" />
+      <workItem from="1688959325300" duration="35421000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -273,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689038308014</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Piccolo merge">
+      <created>1689038951051</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1689038951051</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +321,8 @@
     <MESSAGE value="Conclusa iscrizione alle attività" />
     <MESSAGE value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
     <MESSAGE value="Ora il sito funziona anche con i cookie disabilitati" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ora il sito funziona anche con i cookie disabilitati" />
+    <MESSAGE value="Piccolo merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Piccolo merge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

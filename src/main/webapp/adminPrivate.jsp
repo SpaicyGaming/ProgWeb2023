@@ -19,6 +19,6 @@
 </div>
 <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div></div>
 
-<%@ include file="footer.html" %>
+<jsp:include page="footer.jsp" />
 </body>
 </html>

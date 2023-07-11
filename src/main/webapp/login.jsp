@@ -31,6 +31,6 @@
                 <input type="submit" value="Submit" style="margin-top: 15px; margin-bottom: 3px;">
             </form>
         </div>
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>
