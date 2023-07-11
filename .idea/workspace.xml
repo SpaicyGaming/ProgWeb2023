@@ -2,36 +2,34 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="progweb2023:war" />
+      <artifact name="ProgWeb2023:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Creato cartella immagini">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/52e3e8f6-3324-47df-bdf6-3f45423ffc6b/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
+    <list default="true" id="801f58cf-8ec4-4b35-86f5-7631779dd15a" name="Changes" comment="Gestione dei cookie non funzionante">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c400.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c500.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c510.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c521.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c521.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c531.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c531.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c541.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c541.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c550.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c561.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c561.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c571.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c571.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c580.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c591.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c591.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5a0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Tum4WorldDB/seg0/c5a0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/aderentestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminPrivate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/intestazionePrivate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/simpatizzantestyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unitn/progweb/g30/progweb2023/CreateConnectionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +84,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -98,7 +96,6 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Giulia\IdeaProjects\ProgWeb2023\src\main\webapp\images" />
       <recent name="C:\Users\asus\Desktop\ProgWeb2023\target\progweb2023-1.0-SNAPSHOT\WEB-INF\lib" />
     </key>
   </component>
@@ -109,17 +106,17 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.75" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="progweb2023:war">
+        <artifact name="ProgWeb2023:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/progweb2023_war" />
+            <option name="CONTEXT_PATH" value="/ProgWeb2023" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="730902b6-594e-4145-9458-bb6ea3322cdb" />
+        <option name="BASE_DIRECTORY_NAME" value="082311c6-cf60-4952-9e68-128e6d12bd15" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -127,7 +124,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="52336" />
+        <option name="DEBUG_PORT" value="58465" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -192,7 +189,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="progweb2023:war" />
+          <artifact name="progweb2023:war exploded" />
+          <artifact name="ProgWeb2023:war" />
         </option>
       </method>
     </configuration>
@@ -218,10 +216,7 @@
       <workItem from="1688572428102" duration="2886000" />
       <workItem from="1688832961241" duration="3319000" />
       <workItem from="1688944527697" duration="5064000" />
-      <workItem from="1688959325300" duration="35421000" />
-      <workItem from="1689096657804" duration="2726000" />
-      <workItem from="1689099415770" duration="984000" />
-      <workItem from="1689100496629" duration="3051000" />
+      <workItem from="1688959325300" duration="52127000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup">
       <created>1683721552525</created>
@@ -300,35 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689038951051</updated>
     </task>
-    <task id="LOCAL-00012" summary="Ho sistemato la pagina chisiamo">
-      <created>1689093910741</created>
+    <task id="LOCAL-00012" summary="Gestione dei cookie non funzionante">
+      <created>1689057505862</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1689093910741</updated>
+      <updated>1689057505862</updated>
     </task>
-    <task id="LOCAL-00013" summary="Aggiornato mail contatti">
-      <created>1689094403302</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1689094403302</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Modifiche varie">
-      <created>1689095225456</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1689095225456</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Creato cartella immagini">
-      <created>1689096221636</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1689096221636</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,11 +330,8 @@
     <MESSAGE value="modificate GetDonationsServlet e GetViewsServlet così che scrivano i dati in un file json prima di mandarli al client." />
     <MESSAGE value="Ora il sito funziona anche con i cookie disabilitati" />
     <MESSAGE value="Piccolo merge" />
-    <MESSAGE value="Ho sistemato la pagina chisiamo" />
-    <MESSAGE value="Aggiornato mail contatti" />
-    <MESSAGE value="Modifiche varie" />
-    <MESSAGE value="Creato cartella immagini" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creato cartella immagini" />
+    <MESSAGE value="Gestione dei cookie non funzionante" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gestione dei cookie non funzionante" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

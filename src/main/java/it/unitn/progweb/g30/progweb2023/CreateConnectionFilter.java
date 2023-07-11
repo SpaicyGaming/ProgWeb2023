@@ -35,10 +35,19 @@ public class CreateConnectionFilter implements Filter {
                 e.printStackTrace();
             }
             session.setMaxInactiveInterval(3600);
+            session.setAttribute("isSessionNew", TRUE);
+            /*
             session.setAttribute("cookiesEnabled", FALSE);
             session.setAttribute("madeChoiceAboutCookies", FALSE);
+            */
+
+        }else{
+            if(((Boolean)(session.getAttribute("isSessionNew"))).booleanValue()){
+                session.setAttribute("isSessionNew", FALSE);
+            }
         }
 
+        /*
         if(session.getAttribute("cookiesEnabled") == FALSE){
             Cookie cookies[] = ((HttpServletRequest)request).getCookies();
             if (cookies != null) {
@@ -50,6 +59,8 @@ public class CreateConnectionFilter implements Filter {
                 }
             }
         }
+        */
+
         //((HttpServletResponse)response).encodeURL(((HttpServletRequest) request).getRequestURI());
         chain.doFilter(request, response);
     }
