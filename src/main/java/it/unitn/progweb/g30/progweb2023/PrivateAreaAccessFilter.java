@@ -20,7 +20,7 @@ public class PrivateAreaAccessFilter implements Filter {
         if(((HttpServletRequest)request).getSession().getAttribute("loggedUser") != null){
             chain.doFilter(request, response);
         }else{
-            ((HttpServletResponse)response).sendRedirect("LoginServlet");
+            ((HttpServletResponse)response).sendRedirect(((HttpServletResponse)response).encodeURL("LoginServlet"));
         }
 
     }

@@ -15,10 +15,10 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
         <jsp:useBean id="errorMessage" class="it.unitn.progweb.g30.progweb2023.ErrorMessageBean" scope="request"/>
 
-        <form method="POST" action="SignUpServlet">
+        <form method="POST" action="<%=response.encodeURL("SignUpServlet")%>">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
 
@@ -59,6 +59,6 @@
             <input type="reset" style="margin-top: 15px; margin-bottom: 10vh;">
         </form>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

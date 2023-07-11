@@ -15,7 +15,7 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <h1 style="padding-top: 2%; padding-left: 3%">Chi è Tum4Wordls ?</h1>
         <p class="description" style="padding-top: 2%">Siamo un'organizzazione dedicata a portare luce e speranza alle comunità dei paesi meno sviluppati attraverso l'educazione dei bambini. Il nostro approccio unico si basa sull'empowerment dei bambini come agenti di cambiamento nelle loro comunità.
@@ -36,6 +36,6 @@
             <img src="img5.jpg" style="float:left; width:20%">
         </div>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

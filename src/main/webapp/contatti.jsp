@@ -15,7 +15,7 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <form action="mailto:admin@admin.com" method="post" enctype="text/plain">
             <label for="nomeCognome">Inserire nome e cognome:</label>
@@ -40,6 +40,6 @@
             <input type="reset" name="reset" value="Resetta i campi" style="margin-top: 15px; margin-bottom: 3px;">
         </form>
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>

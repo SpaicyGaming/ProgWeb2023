@@ -28,7 +28,7 @@ public class ResetViewsServlet extends HttpServlet {
         }catch(Exception e){
             e.printStackTrace();
         }
-        response.sendRedirect("PrivateAreaServlet");
+        response.sendRedirect(response.encodeURL("PrivateAreaServlet"));
 
     }
 }

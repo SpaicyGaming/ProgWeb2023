@@ -26,6 +26,6 @@ public class DeleteProfileServlet extends HttpServlet {
             e.printStackTrace();
         }
         request.getSession().setAttribute("loggedUser", null);
-        response.sendRedirect("HomeServlet");
+        response.sendRedirect(response.encodeURL("HomeServlet"));
     }
 }

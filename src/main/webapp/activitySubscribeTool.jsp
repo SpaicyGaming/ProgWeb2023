@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="loggedUser" class="it.unitn.progweb.g30.progweb2023.User" scope="session"/>
-<form method="POST" action="IscrivitiAttivitaServlet">
+<form method="POST" action="<%=response.encodeURL("IscrivitiAttivitaServlet")%>">
     <br><br>
     <input id="a1submit" name="attivita" type="submit" value="centri di apprendimento"><br><br>
 

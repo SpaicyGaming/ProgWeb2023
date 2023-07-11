@@ -10,7 +10,7 @@ public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getSession().setAttribute("loggedUser", null);
-        response.sendRedirect("HomeServlet");
+        response.sendRedirect(response.encodeURL("HomeServlet"));
     }
 
     @Override

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="adminstyle.css">
 </head>
 <body>
-<%@ include file="intestazionePrivate.html" %>
+<jsp:include page="intestazionePrivate.jsp" />
 <script src="./javascript/adminScripts.js"></script>
 <div class="maintext">
 <div id="buttonContainer" class="bc" style="margin: auto; text-align:center">
@@ -19,6 +19,6 @@
 </div>
 <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div></div>
 
-<%@ include file="footer.html" %>
+<jsp:include page="footer.jsp" />
 </body>
 </html>

@@ -15,7 +15,7 @@
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <%@ include file="intestazione.html" %>
+        <jsp:include page="intestazione.jsp" />
 
         <style>
             .image-container {
@@ -39,7 +39,7 @@
         </style>
 
         <div class="image-container">
-            <a href="attivita1.jsp">
+            <a href="<%=response.encodeURL("attivita1.jsp")%>">
                 <img src="attivita1.jpg" alt="Attività 1">
             </a>
             <figcaption>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="image-container">
-            <a href="attivita2.jsp">
+            <a href="<%=response.encodeURL("attivita2.jsp")%>">
                 <img src="attivita2.jpg" alt="Attività 2">
             </a>
             <figcaption>
@@ -57,7 +57,7 @@
         </div>
 
         <div class="image-container">
-            <a href="attivita3.jsp">
+            <a href="<%=response.encodeURL("attivita3.jsp")%>">
                 <img src="attivita3.jpg" alt="Attività 3">
             </a>
             <figcaption>
@@ -66,6 +66,6 @@
         </div>
 
 
-        <%@ include file="footer.html" %>
+        <jsp:include page="footer.jsp" />
     </body>
 </html>
