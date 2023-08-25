@@ -16,18 +16,18 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 
 @WebServlet(name = "GetViewsServlet", value = "/GetViewsServlet")
 public class GetViewsServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Connection c = (Connection) request.getSession().getAttribute("connection");
-        try {
-            Statement stmt = c.createStatement();
-            String query = "SELECT * FROM VIEWSXPAGE";
-            ResultSet rs = stmt.executeQuery(query);
+        Connection connection = (Connection) request.getSession().getAttribute("connection");
+
+        try (PreparedStatement stmt = connection.prepareStatement("SELECT * FROM VIEWSXPAGE")) {
+            ResultSet rs = stmt.executeQuery();
             JsonArray arr = new JsonArray();
             Gson gson = new Gson();
             while (rs.next()) {

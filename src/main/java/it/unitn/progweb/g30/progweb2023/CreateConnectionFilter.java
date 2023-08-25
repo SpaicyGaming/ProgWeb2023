@@ -13,6 +13,7 @@ import static java.lang.Boolean.TRUE;
 
 @WebFilter(filterName = "CreateConnectionFilter")
 public class CreateConnectionFilter implements Filter {
+
     public void init(FilterConfig config) {
     }
 
@@ -25,8 +26,8 @@ public class CreateConnectionFilter implements Filter {
         if (session.isNew()) {
             try {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
-                Connection c = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
-                session.setAttribute("connection", c);
+                Connection connection = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
+                session.setAttribute("connection", connection);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -40,4 +41,5 @@ public class CreateConnectionFilter implements Filter {
 
         chain.doFilter(request, response);
     }
+
 }

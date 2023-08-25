@@ -13,6 +13,7 @@ import static java.lang.Boolean.TRUE;
 
 @WebServlet(name = "CookieServlet", value = "/CookieServlet")
 public class CookieServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -37,4 +38,5 @@ public class CookieServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
 }

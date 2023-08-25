@@ -11,6 +11,7 @@ import java.sql.Connection;
 
 @WebServlet(name = "DeleteProfileServlet", value = "/DeleteProfileServlet")
 public class DeleteProfileServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         fulfillRequest(request, response);
@@ -32,4 +33,5 @@ public class DeleteProfileServlet extends HttpServlet {
         request.getSession().setAttribute("loggedUser", null);
         response.sendRedirect(response.encodeURL("HomeServlet"));
     }
+
 }

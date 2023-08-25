@@ -2,19 +2,19 @@ package it.unitn.progweb.g30.progweb2023;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 
+// todo use an enum?
 public class UserType {
 
     static public final String SIMPATIZZANTE = "simpatizzante";
     static public final String ADERENTE = "aderente";
     static public final String ADMIN = "admin";
-    private static Integer simpatizzanteId = null;
-    private static Integer aderenteId = null;
-    private static Integer adminId = null;
-    private Connection connection = null;
-    private String stringifiedType;
+    private static final Integer simpatizzanteId = null;
+    private static final Integer aderenteId = null;
+    private static final Integer adminId = null;
+    private final String stringifiedType;
     private int type;
 
     public UserType(String t) {
@@ -43,16 +43,15 @@ public class UserType {
         if (isNull) {
             try {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
-                //Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
-                this.connection = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
-                //this.connection = DriverManager.getConnection("jdbc:derby:Tum4WorldDB;create=true");
+                Connection connection = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
 
 
-                String query = "SELECT USER_TYPE_ID FROM USER_TYPES WHERE USER_TYPE = '" + stringifiedType + "'";
-                Statement stmt = this.connection.createStatement();
-                ResultSet result = stmt.executeQuery(query);
-                result.next();
-                type = result.getInt(1);
+                try (PreparedStatement stmt = connection.prepareStatement("SELECT USER_TYPE_ID FROM USER_TYPES WHERE USER_TYPE = ?")) {
+                    stmt.setString(1, stringifiedType);
+                    ResultSet result = stmt.executeQuery();
+                    result.next();
+                    type = result.getInt(1);
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }

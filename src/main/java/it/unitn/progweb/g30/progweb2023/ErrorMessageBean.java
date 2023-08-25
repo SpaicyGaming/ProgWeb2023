@@ -3,6 +3,7 @@ package it.unitn.progweb.g30.progweb2023;
 import java.io.Serializable;
 
 public class ErrorMessageBean implements Serializable {
+
     private final static int GROUP_ID = 30;
     private String message;
 

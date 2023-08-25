@@ -9,6 +9,7 @@ import java.io.IOException;
 
 @WebServlet(name = "ChiSiamoServlet", value = "/ChiSiamoServlet")
 public class ChiSiamoServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         getServletContext().getRequestDispatcher("/chisiamo.jsp").forward(request, response);
@@ -18,4 +19,5 @@ public class ChiSiamoServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+
 }

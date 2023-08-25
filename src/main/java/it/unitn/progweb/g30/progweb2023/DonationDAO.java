@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class DonationDAO {
+
     Connection connection;
 
     public DonationDAO(Connection c) {
@@ -11,25 +12,28 @@ public class DonationDAO {
     }
 
     public void saveDonation(Donation d) throws SQLException {
-        Statement stmt = connection.createStatement();
-        String query = String.format("INSERT INTO DONATIONS VALUES(DEFAULT, '%s', %d)", d.getData(), d.getImporto());
-        stmt.execute(query);
+        try (PreparedStatement stmt = connection.prepareStatement("INSERT INTO DONATIONS VALUES(DEFAULT, ?, ?)")) {
+            stmt.setString(1, d.getData());
+            stmt.setInt(2, d.getImporto());
+            stmt.executeUpdate();
+        }
     }
 
     public ArrayList<Donation> getYearsDonations() throws SQLException {
         ArrayList<Donation> darr = new ArrayList<>();
         Date today = new Date(System.currentTimeMillis());
-        Statement stmt = connection.createStatement();
-        String query = String.format("SELECT IMPORTO, DATA_DONAZIONE FROM" +
-                " DONATIONS WHERE DATA_DONAZIONE >= '%s'", extractYear(today.toString()) + "-01-01");
-        ResultSet rs = stmt.executeQuery(query);
-        while (rs.next()) {
-            Donation d = new Donation();
-            d.setImporto(rs.getInt(1));
-            d.setData(rs.getString(2));
-            darr.add(d);
+
+        try (PreparedStatement stmt = connection.prepareStatement("SELECT IMPORTO, DATA_DONAZIONE FROM DONATIONS WHERE DATA_DONAZIONE >= ?")) {
+            stmt.setString(1, extractYear(today.toString()) + "-01-01");
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                Donation d = new Donation();
+                d.setImporto(rs.getInt(1));
+                d.setData(rs.getString(2));
+                darr.add(d);
+            }
+            return darr;
         }
-        return darr;
     }
 
     private String extractYear(String date) {

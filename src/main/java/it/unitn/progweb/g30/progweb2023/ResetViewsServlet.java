@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 
 @WebServlet(name = "ResetViewsServlet", value = "/ResetViewsServlet")
 public class ResetViewsServlet extends HttpServlet {
@@ -21,12 +21,10 @@ public class ResetViewsServlet extends HttpServlet {
         fulfillRequest(request, response);
     }
 
-    private void fulfillRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Connection c = (Connection) request.getSession().getAttribute("connection");
-        try {
-            Statement stmt = c.createStatement();
-            String query = "UPDATE VIEWSXPAGE SET VIEWS = 0";
-            stmt.execute(query);
+    private void fulfillRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Connection connection = (Connection) request.getSession().getAttribute("connection");
+        try (PreparedStatement stmt = connection.prepareStatement("UPDATE VIEWSXPAGE SET VIEWS = 0")) {
+            stmt.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }

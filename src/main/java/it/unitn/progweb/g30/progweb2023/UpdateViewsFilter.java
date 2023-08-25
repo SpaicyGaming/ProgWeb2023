@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -22,18 +23,22 @@ public class UpdateViewsFilter implements Filter {
         String page = ((HttpServletRequest) request).getServletPath();
         String method = ((HttpServletRequest) request).getMethod();
         if (!(page.equals("/LoginServlet") && method.equals("POST") || page.equals("/SignUpServlet") && method.equals("POST"))) {
-            Connection c = (Connection) ((HttpServletRequest) request).getSession().getAttribute("connection");
+            Connection connection = (Connection) ((HttpServletRequest) request).getSession().getAttribute("connection");
             try {
-                Statement stmt = c.createStatement();
-                String query = String.format("SELECT * FROM VIEWSXPAGE WHERE PAGE = '%s'", page);
-                ResultSet rs = stmt.executeQuery(query);
-                stmt = c.createStatement();
-                if (rs.next()) {
-                    query = String.format("UPDATE VIEWSXPAGE SET VIEWS = VIEWS + 1 WHERE PAGE = '%s'", page);
-                    stmt.execute(query);
-                } else {
-                    query = String.format("INSERT INTO VIEWSXPAGE VALUES(DEFAULT, '%s', 1)", page);
-                    stmt.execute(query);
+                try (PreparedStatement stmt = connection.prepareStatement("SELECT * FROM VIEWSXPAGE WHERE PAGE = ?")) {
+                    stmt.setString(1, page);
+                    ResultSet rs = stmt.executeQuery();
+                    if (rs.next()) {
+                        try (PreparedStatement stmt2 = connection.prepareStatement("UPDATE VIEWSXPAGE SET VIEWS = VIEWS + 1 WHERE PAGE = ?")) {
+                            stmt2.setString(1, page);
+                            stmt2.executeUpdate();
+                        }
+                    } else {
+                        try (PreparedStatement stmt2 = connection.prepareStatement("INSERT INTO VIEWSXPAGE VALUES(DEFAULT, ?, 1)")) {
+                            stmt2.setString(1, page);
+                            stmt2.executeUpdate();
+                        }
+                    }
                 }
             } catch (Exception e) {
                 e.printStackTrace();

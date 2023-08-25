@@ -3,6 +3,7 @@ package it.unitn.progweb.g30.progweb2023;
 import java.io.Serializable;
 
 public class Donation implements Serializable {
+
     private int importo;
     private String data;
 
@@ -21,4 +22,5 @@ public class Donation implements Serializable {
     public void setData(String data) {
         this.data = data;
     }
+
 }

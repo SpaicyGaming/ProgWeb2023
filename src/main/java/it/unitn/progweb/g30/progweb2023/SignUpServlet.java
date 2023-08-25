@@ -31,8 +31,8 @@ public class SignUpServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
         }
 
-        Connection c = (Connection) request.getSession().getAttribute("connection");
-        UserDAO ud = new UserDAO(c);
+        Connection connection = (Connection) request.getSession().getAttribute("connection");
+        UserDAO ud = new UserDAO(connection);
         User u = new User();
         if (ud.getUserByUsername(username) == null) {
             UserType ut = new UserType(userType);
