@@ -33,12 +33,7 @@ public class DonationDAO {
     }
 
     private String extractYear(String date) {
-        String year = "";
-        int i = 0;
-        while (date.charAt(i) != '-') {
-            year += date.charAt(i);
-            i++;
-        }
-        return year;
+        return date.split("-")[0];
     }
+
 }
