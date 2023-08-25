@@ -12,7 +12,7 @@
     <title>Tum4World</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="WEB-INF/style.css">
 
 </head>
 <body>

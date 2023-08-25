@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="aderentestyle.css">
+    <link rel="stylesheet" href="WEB-INF/aderentestyle.css">
     <title>Tum4World</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
