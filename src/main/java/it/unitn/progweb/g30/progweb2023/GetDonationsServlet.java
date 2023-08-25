@@ -16,23 +16,24 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.sql.Connection;
-import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @WebServlet(name = "GetDonationsServlet", value = "/GetDonationsServlet")
 public class GetDonationsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         DonationDAO dd = new DonationDAO((Connection) request.getSession().getAttribute("connection"));
-        ArrayList<Donation> al = null;
+        List<Donation> donations = Collections.emptyList();
         try {
-            al = dd.getYearsDonations();
+            donations = dd.getYearsDonations();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         JsonArray arr = new JsonArray();
         Gson gson = new Gson();
-        for (Donation d : al) {
+        for (Donation d : donations) {
             arr.add(gson.toJson(d));
         }
 

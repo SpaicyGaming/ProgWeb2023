@@ -1,7 +1,11 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserDAO {
 
@@ -55,10 +59,10 @@ public class UserDAO {
         }
     }
 
-    public ArrayList<User> getAllUsers() throws SQLException {
+    public List<User> getAllUsers() throws SQLException {
         try (PreparedStatement stmt = connection.prepareStatement("SELECT USER_ID, USERNAME, MAIL, NOME, COGNOME, NUMERO_DI_TELEFONO, DATA_DI_NASCITA, USER_TYPES.USER_TYPE, PASSWORD FROM USERS INNER JOIN USER_TYPES ON USERS.USER_TYPE = USER_TYPE_ID")) {
             ResultSet result = stmt.executeQuery();
-            ArrayList<User> users = new ArrayList<>();
+            List<User> users = new ArrayList<>();
             while (result.next()) {
                 User u = new User();
                 u.setId(result.getInt(1));
@@ -76,16 +80,16 @@ public class UserDAO {
         }
     }
 
-    public ArrayList<User> getAllSimpatizzanti() throws SQLException {
-        ArrayList<User> al = getAllUsers();
-        al.removeIf(e -> e.getUserType() != UserType.SIMPATIZZANTE);
-        return al;
+    public List<User> getAllSimpatizzanti() throws SQLException {
+        List<User> simpatizzanti = getAllUsers();
+        simpatizzanti.removeIf(e -> e.getUserType() != UserType.SIMPATIZZANTE);
+        return simpatizzanti;
     }
 
-    public ArrayList<User> getAllAderenti() throws SQLException {
-        ArrayList<User> al = getAllUsers();
-        al.removeIf(e -> (e.getUserType() != UserType.ADERENTE));
-        return al;
+    public List<User> getAllAderenti() throws SQLException {
+        List<User> aderenti = getAllUsers();
+        aderenti.removeIf(e -> (e.getUserType() != UserType.ADERENTE));
+        return aderenti;
     }
 
     public boolean isUserSubscribedToActivity(User u, String a) throws SQLException {

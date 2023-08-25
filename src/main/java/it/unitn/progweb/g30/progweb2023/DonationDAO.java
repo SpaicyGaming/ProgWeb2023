@@ -2,6 +2,7 @@ package it.unitn.progweb.g30.progweb2023;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class DonationDAO {
 
@@ -19,8 +20,8 @@ public class DonationDAO {
         }
     }
 
-    public ArrayList<Donation> getYearsDonations() throws SQLException {
-        ArrayList<Donation> darr = new ArrayList<>();
+    public List<Donation> getYearsDonations() throws SQLException {
+        List<Donation> donations = new ArrayList<>();
         Date today = new Date(System.currentTimeMillis());
 
         try (PreparedStatement stmt = connection.prepareStatement("SELECT IMPORTO, DATA_DONAZIONE FROM DONATIONS WHERE DATA_DONAZIONE >= ?")) {
@@ -30,9 +31,9 @@ public class DonationDAO {
                 Donation d = new Donation();
                 d.setImporto(rs.getInt(1));
                 d.setData(rs.getString(2));
-                darr.add(d);
+                donations.add(d);
             }
-            return darr;
+            return donations;
         }
     }
 

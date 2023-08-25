@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 @WebServlet(name = "GetAllAderentiServlet", value = "/GetAllAderentiServlet")
 public class GetAllAderentiServlet extends HttpServlet {
@@ -19,16 +20,16 @@ public class GetAllAderentiServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDAO ud = new UserDAO((Connection) request.getSession().getAttribute("connection"));
-        ArrayList<User> al = null;
+        List<User> aderenti = Collections.emptyList();
         try {
-            al = ud.getAllAderenti();
+            aderenti = ud.getAllAderenti();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         JsonArray arr = new JsonArray();
         Gson gson = new Gson();
-        for (User u : al) {
+        for (User u : aderenti) {
             arr.add(gson.toJson(u));
         }
         PrintWriter pw = response.getWriter();
