@@ -1,68 +1,40 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import java.sql.*;
 
-// todo use an enum?
-public class UserType {
+public enum UserType {
 
-    static public final String SIMPATIZZANTE = "simpatizzante";
-    static public final String ADERENTE = "aderente";
-    static public final String ADMIN = "admin";
-    private static final Integer simpatizzanteId = null;
-    private static final Integer aderenteId = null;
-    private static final Integer adminId = null;
-    private final String stringifiedType;
-    private int type;
+    SIMPATIZZANTE,
+    ADERENTE,
+    ADMIN;
 
-    public UserType(String t) {
-        stringifiedType = t;
-        boolean isNull = true;
-        switch (t) {
-            case SIMPATIZZANTE:
-                if (simpatizzanteId != null) {
-                    isNull = false;
-                    type = simpatizzanteId;
-                }
-                break;
-            case ADERENTE:
-                if (aderenteId != null) {
-                    isNull = false;
-                    type = aderenteId;
-                }
-                break;
-            case ADMIN:
-                if (adminId != null) {
-                    isNull = false;
-                    type = adminId;
-                }
-                break;
-        }
-        if (isNull) {
+    private int ID = -1;
+
+    public static UserType fromString(String stringifiedType) {
+        return UserType.valueOf(stringifiedType.toUpperCase());
+    }
+
+    public int getID() {
+        if (ID < 0) {
             try {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
                 Connection connection = DriverManager.getConnection("jdbc:derby://localhost:1527/Tum4WorldDB");
-
-
                 try (PreparedStatement stmt = connection.prepareStatement("SELECT USER_TYPE_ID FROM USER_TYPES WHERE USER_TYPE = ?")) {
-                    stmt.setString(1, stringifiedType);
+                    stmt.setString(1, this.toString());
                     ResultSet result = stmt.executeQuery();
                     result.next();
-                    type = result.getInt(1);
+                    ID = result.getInt(1);
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
+            } catch (ClassNotFoundException | SQLException e) {
+                throw new RuntimeException(e);
             }
         }
+        return ID;
     }
 
-    public int getTypeId() {
-        return this.type;
+    @Override
+    public String toString() {
+        return super.name().toLowerCase();
     }
 
-    public String getStringifiedType() {
-        return this.stringifiedType;
-    }
 }

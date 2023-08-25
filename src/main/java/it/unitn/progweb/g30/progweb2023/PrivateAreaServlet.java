@@ -21,14 +21,14 @@ public class PrivateAreaServlet extends HttpServlet {
 
     protected void fulfillRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         User u = (User) request.getSession().getAttribute("loggedUser");
-        switch (u.getStringifiedType()) {
-            case "aderente":
+        switch (u.getUserType()) {
+            case ADERENTE:
                 getServletContext().getRequestDispatcher("/aderentePrivate.jsp").forward(request, response);
                 break;
-            case "simpatizzante":
+            case SIMPATIZZANTE:
                 getServletContext().getRequestDispatcher("/simpatizzantePrivate.jsp").forward(request, response);
                 break;
-            case "admin":
+            case ADMIN:
                 getServletContext().getRequestDispatcher("/adminPrivate.jsp").forward(request, response);
                 break;
         }

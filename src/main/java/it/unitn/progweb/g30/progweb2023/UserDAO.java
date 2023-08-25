@@ -24,7 +24,7 @@ public class UserDAO {
                 user.setCognome(result.getString(5));
                 user.setPhoneNumber(result.getString(6));
                 user.setBd(result.getString(7));
-                user.setUserType(new UserType(result.getString(8)));
+                user.setUserType(UserType.fromString(result.getString(8)));
                 user.setPassword(result.getString(9));
                 return user;
             }
@@ -42,7 +42,7 @@ public class UserDAO {
             stmt.setString(4, u.getCognome());
             stmt.setString(5, u.getPhoneNumber());
             stmt.setString(6, u.getBd());
-            stmt.setInt(7, u.getUserType().getTypeId());
+            stmt.setInt(7, u.getUserType().getID());
             stmt.setString(8, u.getPassword());
             stmt.executeUpdate();
         }
@@ -68,7 +68,7 @@ public class UserDAO {
                 u.setCognome(result.getString(5));
                 u.setPhoneNumber(result.getString(6));
                 u.setBd(result.getString(7));
-                u.setUserType(new UserType(result.getString(8)));
+                u.setUserType(UserType.fromString(result.getString(8)));
                 u.setPassword(result.getString(9));
                 users.add(u);
             }
@@ -78,13 +78,13 @@ public class UserDAO {
 
     public ArrayList<User> getAllSimpatizzanti() throws SQLException {
         ArrayList<User> al = getAllUsers();
-        al.removeIf(e -> (!e.getStringifiedType().equals("simpatizzante")));
+        al.removeIf(e -> e.getUserType() != UserType.SIMPATIZZANTE);
         return al;
     }
 
     public ArrayList<User> getAllAderenti() throws SQLException {
         ArrayList<User> al = getAllUsers();
-        al.removeIf(e -> (!e.getStringifiedType().equals("aderente")));
+        al.removeIf(e -> (e.getUserType() != UserType.ADERENTE));
         return al;
     }
 

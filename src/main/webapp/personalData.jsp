@@ -20,7 +20,7 @@
     </li>
     <li>numero di telefono: <%=loggedUser.getPhoneNumber()%>
     </li>
-    <li>tipo di utente: <%=loggedUser.getStringifiedType()%>
+    <li>tipo di utente: <%=loggedUser.getUserType().toString()%>
     </li>
     <li>password: <%=loggedUser.getPassword()%>
     </li>

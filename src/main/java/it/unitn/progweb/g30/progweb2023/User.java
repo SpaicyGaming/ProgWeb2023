@@ -8,7 +8,6 @@ public class User implements Serializable {
     private String mail;
     private transient String password;
     private transient UserType userType;
-    private String stringifiedType;
     private String nome;
     private String cognome;
     private String bd;
@@ -46,13 +45,8 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getStringifiedType() {
-        return stringifiedType;
-    }
-
     public void setUserType(UserType ut) {
         this.userType = ut;
-        this.stringifiedType = ut.getStringifiedType();
     }
 
     public UserType getUserType() {

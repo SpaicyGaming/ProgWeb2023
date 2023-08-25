@@ -36,7 +36,7 @@ public class SignUpServlet extends HttpServlet {
         UserDAO ud = new UserDAO(connection);
         User u = new User();
         if (ud.getUserByUsername(username) == null) {
-            UserType ut = new UserType(userType);
+            UserType ut = UserType.fromString(userType);
             u.setNome(nome);
             u.setCognome(cognome);
             u.setUsername(username);
