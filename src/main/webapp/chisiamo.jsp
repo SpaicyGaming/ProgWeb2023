@@ -61,22 +61,22 @@
 
 <div style="padding-left: 2%; padding-top: 3%">
     <div class="image-container">
-        <img src="images/img1.jpg">
+        <img src="images/img1.jpg" alt="Adulti che si danno il cinque">
     </div>
     <div class="image-container">
-        <img src="images/img2.jpg">
+        <img src="images/img2.jpg" alt="Bambini sorridenti">
     </div>
     <div class="image-container">
-        <img src="images/img3.jpg">
+        <img src="images/img3.jpg" alt="Bambini che mangiano">
     </div>
     <div class="image-container">
-        <img src="images/img4.jpg">
+        <img src="images/img4.jpg" alt="Bambini sorridenti">
     </div>
     <div class="image-container">
-        <img src="images/img5.jpg">
+        <img src="images/img5.jpg" alt="Noi che lavoriamo">
     </div>
     <div class="image-container">
-        <img src="images/img6.jpg">
+        <img src="images/img6.jpg" alt="Noi che lavoriamo">
     </div>
 </div>
 

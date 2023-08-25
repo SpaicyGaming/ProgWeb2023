@@ -11,7 +11,7 @@
 <jsp:include page="intestazione.jsp"/>
 
 <div class="container" style="padding-top: 3%">
-    <img class="image" src="images/attivita1.jpg" style="width: 25%; padding-left: 2%; float: left">
+    <img class="image" src="images/attivita1.jpg" alt="Apprendimento bambini" style="width: 25%; padding-left: 2%; float: left">
 
     <p class="description" style="padding-left: 30%">
         Nasce un luogo di speranza, dove i sorrisi dei bambini risplendono senza fine. I centri di apprendimento sorgono

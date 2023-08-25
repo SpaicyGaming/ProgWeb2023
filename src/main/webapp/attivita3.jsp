@@ -11,7 +11,7 @@
 <jsp:include page="intestazione.jsp"/>
 
 <div class="container" style="padding-top: 3%">
-    <img class="image" src="images/attivita3.jpg" alt="Immagine" style="width: 25%; padding-left: 2%; float: left">
+    <img class="image" src="images/attivita3.jpg" alt="Programmi educativi" style="width: 25%; padding-left: 2%; float: left">
 
     <div class="content">
 

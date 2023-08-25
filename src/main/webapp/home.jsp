@@ -46,10 +46,10 @@
 <jsp:include page="intestazione.jsp"/>
 
 <div class="container">
-    <img class="image" src="images/imgDescrittiva.jpg" alt="Immagine" style="width: 25%">
+    <img class="image" src="images/imgDescrittiva.jpg" alt="Immagine bambini locali" style="width: 25%">
 
     <div class="content">
-        <img src="images/logo.png"
+        <img src="images/logo.png"  alt="Logo Tum4World"
              style="padding-bottom: 5%; padding-left: 3%; width: 20%; height: auto; align-content: center;">
 
         <p class="description">Benvenuti nella grande famiglia di Tum4World, impegnata a fornire istruzione di qualità
