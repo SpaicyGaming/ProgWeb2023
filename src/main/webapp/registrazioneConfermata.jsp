@@ -13,13 +13,13 @@
     <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+
 </head>
 <body>
-    <jsp:include page="intestazione.jsp" />
+<jsp:include page="intestazione.jsp"/>
 <div class="maintext">
     <h1>Registrazione confermata</h1>
 </div>
-    <jsp:include page="footer.jsp" />
+<jsp:include page="footer.jsp"/>
 </body>
 </html>

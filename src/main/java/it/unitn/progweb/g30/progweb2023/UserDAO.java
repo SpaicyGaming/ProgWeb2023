@@ -1,21 +1,26 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class UserDAO {
+
     Connection c;
 
-    public UserDAO(Connection c){
+    public UserDAO(Connection c) {
         this.c = c;
     }
-    public User getUserByUsername(String un){
+
+    public User getUserByUsername(String un) {
         User u = null;
         try {
             String query = "SELECT USER_ID, USERNAME, MAIL, NOME, COGNOME, NUMERO_DI_TELEFONO, DATA_DI_NASCITA, USER_TYPES.USER_TYPE, PASSWORD FROM USERS INNER JOIN USER_TYPES ON USERS.USER_TYPE = USER_TYPES.USER_TYPE_ID WHERE USERNAME = '" + un + "'";
             Statement stmt = this.c.createStatement();
             ResultSet result = stmt.executeQuery(query);
-            if(result.next()){
+            if (result.next()) {
                 u = new User();
                 u.setId(result.getInt(1));
                 u.setUsername(result.getString(2));
@@ -34,16 +39,16 @@ public class UserDAO {
     }
 
     public void saveUser(User u) throws SQLException {
-        String query = String.format("INSERT INTO USERS VALUES (DEFAULT, '%s',"+
-            " '%s', '%s', '%s', '%s', '%s', %d, '%s')",
-            u.getUsername(),
-            u.getMail(),
-            u.getNome(),
-            u.getCognome(),
-            u.getPhoneNumber(),
-            u.getBd(),
-            u.getUserType().getTypeId(),
-            u.getPassword()
+        String query = String.format("INSERT INTO USERS VALUES (DEFAULT, '%s'," +
+                        " '%s', '%s', '%s', '%s', '%s', %d, '%s')",
+                u.getUsername(),
+                u.getMail(),
+                u.getNome(),
+                u.getCognome(),
+                u.getPhoneNumber(),
+                u.getBd(),
+                u.getUserType().getTypeId(),
+                u.getPassword()
         );
         Statement stmt = this.c.createStatement();
         stmt.execute(query);
@@ -60,7 +65,7 @@ public class UserDAO {
         String query = "SELECT USER_ID, USERNAME, MAIL, NOME, COGNOME, NUMERO_DI_TELEFONO, DATA_DI_NASCITA, USER_TYPES.USER_TYPE, PASSWORD FROM USERS INNER JOIN USER_TYPES ON USERS.USER_TYPE = USER_TYPE_ID";
         ResultSet result = stmt.executeQuery(query);
         ArrayList<User> al = new ArrayList<>();
-        while(result.next()){
+        while (result.next()) {
             User u = new User();
             u.setId(result.getInt(1));
             u.setUsername(result.getString(2));
@@ -94,4 +99,5 @@ public class UserDAO {
         ResultSet rs = stmt.executeQuery(query);
         return rs.next();
     }
+
 }

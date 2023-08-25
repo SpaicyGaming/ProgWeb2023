@@ -1,7 +1,6 @@
 package it.unitn.progweb.g30.progweb2023;
 
 import java.io.Serializable;
-import java.sql.Date;
 
 public class Donation implements Serializable {
     private int importo;
@@ -15,11 +14,11 @@ public class Donation implements Serializable {
         return data;
     }
 
-    public void setImporto(int imp){
+    public void setImporto(int imp) {
         importo = imp;
     }
 
-    public void setData(String data){
+    public void setData(String data) {
         this.data = data;
     }
 }

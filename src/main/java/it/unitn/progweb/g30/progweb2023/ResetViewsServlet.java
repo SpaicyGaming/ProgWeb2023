@@ -1,8 +1,10 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Statement;
@@ -20,15 +22,15 @@ public class ResetViewsServlet extends HttpServlet {
     }
 
     private void fulfillRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Connection c = (Connection)request.getSession().getAttribute("connection");
+        Connection c = (Connection) request.getSession().getAttribute("connection");
         try {
             Statement stmt = c.createStatement();
             String query = "UPDATE VIEWSXPAGE SET VIEWS = 0";
             stmt.execute(query);
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         response.sendRedirect(response.encodeURL("PrivateAreaServlet"));
-
     }
+
 }

@@ -1,6 +1,9 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class UserType {
 
@@ -10,33 +13,34 @@ public class UserType {
     private static Integer simpatizzanteId = null;
     private static Integer aderenteId = null;
     private static Integer adminId = null;
-    private Connection connection=null;
+    private Connection connection = null;
     private String stringifiedType;
     private int type;
-    public UserType(String t){
+
+    public UserType(String t) {
         stringifiedType = t;
         boolean isNull = true;
-        switch(t) {
+        switch (t) {
             case SIMPATIZZANTE:
-                if(simpatizzanteId != null){
+                if (simpatizzanteId != null) {
                     isNull = false;
                     type = simpatizzanteId;
                 }
                 break;
             case ADERENTE:
-                if(aderenteId != null){
+                if (aderenteId != null) {
                     isNull = false;
                     type = aderenteId;
                 }
                 break;
             case ADMIN:
-                if(adminId != null){
+                if (adminId != null) {
                     isNull = false;
                     type = adminId;
                 }
                 break;
         }
-        if(isNull) {
+        if (isNull) {
             try {
                 Class.forName("org.apache.derby.jdbc.ClientDriver");
                 //Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
@@ -55,8 +59,11 @@ public class UserType {
         }
     }
 
-    public int getTypeId(){
+    public int getTypeId() {
         return this.type;
     }
-    public String getStringifiedType() { return this.stringifiedType; }
+
+    public String getStringifiedType() {
+        return this.stringifiedType;
+    }
 }

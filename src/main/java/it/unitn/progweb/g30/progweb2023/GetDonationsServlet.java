@@ -3,9 +3,12 @@ package it.unitn.progweb.g30.progweb2023;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -19,27 +22,27 @@ import java.util.ArrayList;
 public class GetDonationsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        DonationDAO dd = new DonationDAO((Connection)request.getSession().getAttribute("connection"));
+        DonationDAO dd = new DonationDAO((Connection) request.getSession().getAttribute("connection"));
         ArrayList<Donation> al = null;
         try {
             al = dd.getYearsDonations();
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
         JsonArray arr = new JsonArray();
         Gson gson = new Gson();
-        for(Donation d : al){
+        for (Donation d : al) {
             arr.add(gson.toJson(d));
         }
 
-        synchronized(this){
+        synchronized (this) {
             try {
                 ServletContext context = request.getServletContext();
                 String realPath = context.getRealPath("\\");
                 File outf = new File(realPath + "\\donations.json");
                 //System.out.println(realPath + "\\donations.json");
-                if(!outf.createNewFile()){
+                if (!outf.createNewFile()) {
                     outf.delete();
                     outf.createNewFile();
                 }
@@ -49,7 +52,7 @@ public class GetDonationsServlet extends HttpServlet {
                 PrintWriter pw = response.getWriter();
                 Path p = Path.of(realPath + "\\donations.json");
                 pw.println(Files.readString(p));
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

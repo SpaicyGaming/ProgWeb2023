@@ -3,6 +3,7 @@ package it.unitn.progweb.g30.progweb2023;
 import java.io.Serializable;
 
 public class Views implements Serializable {
+
     private String page;
     private int views;
     private int id;

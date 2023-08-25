@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/tt-commons');
 @import url('https://fonts.cdnfonts.com/css/barrio');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color:#c7fcdc;
-    color:rgba(0, 0, 0, 0.804);
+    background-color: #c7fcdc;
+    color: rgba(0, 0, 0, 0.804);
 }
 
 #logo {
@@ -25,7 +25,7 @@ div.header {
     height: 30%;
 }
 
-div.header table{
+div.header table {
     height: 100%;
     width: 100%;
     border-collapse: collapse;
@@ -33,7 +33,7 @@ div.header table{
     display: table;
 }
 
-div.header tbody{
+div.header tbody {
     height: inherit;
     width: inherit;
     display: table;
@@ -48,7 +48,7 @@ button {
     height: 7dvh;
 }
 
-input{
+input {
     text-align: center;
     font-size: 130%;
     border-width: 1px;
@@ -70,6 +70,7 @@ div.header img {
     margin-right: auto;
     margin-top: 15px;
 }
+
 div.header div {
     text-align: center;
     margin-bottom: 15px;
@@ -85,13 +86,13 @@ div.header ul {
     display: flex;
     height: 100%;
 }
-  
+
 div.header li {
     float: left;
     margin-top: auto;
     margin-bottom: auto;
 }
-  
+
 div.header li a {
     display: block;
     color: white;
@@ -102,14 +103,14 @@ div.header li a {
 }
 
 p#quoteBox {
-    font-style:italic;
+    font-style: italic;
     font-size: 20px;
     text-align: center;
     padding: 5px;
     font-weight: bold;
 }
 
-div.maintext{
+div.maintext {
     margin: 15px;
     padding: 15px;
 }

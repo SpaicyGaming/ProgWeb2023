@@ -1,7 +1,7 @@
 package it.unitn.progweb.g30.progweb2023;
 
 import javax.servlet.*;
-import javax.servlet.annotation.*;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.sql.Connection;
@@ -10,7 +10,8 @@ import java.sql.Statement;
 
 @WebFilter(filterName = "UpdateViewsFilter")
 public class UpdateViewsFilter implements Filter {
-    public void init(FilterConfig config) throws ServletException {
+
+    public void init(FilterConfig config) {
     }
 
     public void destroy() {
@@ -20,7 +21,7 @@ public class UpdateViewsFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
         String page = ((HttpServletRequest) request).getServletPath();
         String method = ((HttpServletRequest) request).getMethod();
-        if(!(page.equals("/LoginServlet") && method.equals("POST") || page.equals("/SignUpServlet") && method.equals("POST"))) {
+        if (!(page.equals("/LoginServlet") && method.equals("POST") || page.equals("/SignUpServlet") && method.equals("POST"))) {
             Connection c = (Connection) ((HttpServletRequest) request).getSession().getAttribute("connection");
             try {
                 Statement stmt = c.createStatement();
@@ -40,4 +41,5 @@ public class UpdateViewsFilter implements Filter {
         }
         chain.doFilter(request, response);
     }
+
 }

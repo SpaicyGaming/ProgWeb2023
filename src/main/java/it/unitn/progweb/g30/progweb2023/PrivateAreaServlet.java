@@ -1,8 +1,10 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "PrivateAreaServlet", value = "/PrivateAreaServlet")
@@ -18,8 +20,8 @@ public class PrivateAreaServlet extends HttpServlet {
     }
 
     protected void fulfillRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        User u = (User)request.getSession().getAttribute("loggedUser");
-        switch(u.getStringifiedType()){
+        User u = (User) request.getSession().getAttribute("loggedUser");
+        switch (u.getStringifiedType()) {
             case "aderente":
                 getServletContext().getRequestDispatcher("/aderentePrivate.jsp").forward(request, response);
                 break;
@@ -31,4 +33,5 @@ public class PrivateAreaServlet extends HttpServlet {
                 break;
         }
     }
+
 }

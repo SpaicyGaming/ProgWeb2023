@@ -55,7 +55,7 @@ public class User implements Serializable {
         this.stringifiedType = ut.getStringifiedType();
     }
 
-    public UserType getUserType(){
+    public UserType getUserType() {
         return this.userType;
     }
 

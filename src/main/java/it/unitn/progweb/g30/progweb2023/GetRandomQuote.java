@@ -1,14 +1,18 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import com.google.gson.Gson;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import com.google.gson.Gson;
 
 @WebServlet(name = "GetRandomQuote", value = "/GetRandomQuote")
 public class GetRandomQuote extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] quoteArr = new String[10];
@@ -27,11 +31,12 @@ public class GetRandomQuote extends HttpServlet {
         response.setCharacterEncoding("utf-8");
         PrintWriter output = response.getWriter();
         Gson gson = new Gson();
-        output.println(gson.toJson(quoteArr[(int)(Math.random()*10)]));
+        output.println(gson.toJson(quoteArr[(int) (Math.random() * 10)]));
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+
 }

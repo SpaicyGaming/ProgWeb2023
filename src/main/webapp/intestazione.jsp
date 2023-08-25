@@ -10,7 +10,7 @@
     <table>
         <tbody>
         <tr>
-            <td id = "logo"; style="vertical-align: middle; padding-bottom: 10px">
+            <td id="logo" style="vertical-align: middle; padding-bottom: 10px">
                 <!--<img src="logo.png" style="width: 150px;"/>-->
                 Tum4World
             </td>

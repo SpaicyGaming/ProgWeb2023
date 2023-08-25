@@ -1,13 +1,16 @@
 package it.unitn.progweb.g30.progweb2023;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 
 @WebServlet(name = "SignUpServlet", value = "/SignUpServlet")
 public class SignUpServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
@@ -24,14 +27,14 @@ public class SignUpServlet extends HttpServlet {
         String userType = request.getParameter("userType");
         String password = request.getParameter("password");
 
-        if(nome == null || cognome == null || username == null || mail == null || numeroDiTelefono == null || bd == null || userType == null || password == null){
+        if (nome == null || cognome == null || username == null || mail == null || numeroDiTelefono == null || bd == null || userType == null || password == null) {
             getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
         }
 
-        Connection c = (Connection)request.getSession().getAttribute("connection");
+        Connection c = (Connection) request.getSession().getAttribute("connection");
         UserDAO ud = new UserDAO(c);
         User u = new User();
-        if(ud.getUserByUsername(username) == null){
+        if (ud.getUserByUsername(username) == null) {
             UserType ut = new UserType(userType);
             u.setNome(nome);
             u.setCognome(cognome);
@@ -43,12 +46,12 @@ public class SignUpServlet extends HttpServlet {
             u.setPassword(password);
             try {
                 ud.saveUser(u);
-            }catch(Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 
             getServletContext().getRequestDispatcher("/registrazioneConfermata.jsp").forward(request, response);
-        }else{
+        } else {
             //qui si informa l'utente del fatto che lo username non è disponibile
             ErrorMessageBean em = new ErrorMessageBean();
             em.setMessage("Il nome utente scelto è già in uso");
@@ -56,4 +59,5 @@ public class SignUpServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
         }
     }
+
 }
