@@ -29,6 +29,7 @@ public class SignUpServlet extends HttpServlet {
 
         if (nome == null || cognome == null || username == null || mail == null || numeroDiTelefono == null || bd == null || userType == null || password == null) {
             getServletContext().getRequestDispatcher("/signup.jsp").forward(request, response);
+            return;
         }
 
         Connection connection = (Connection) request.getSession().getAttribute("connection");
