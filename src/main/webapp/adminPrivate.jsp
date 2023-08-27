@@ -18,6 +18,7 @@
         <button onclick="displayViews()" style="display: inline">Visualizza le visualizzazioni per pagina</button>
         <button onclick="displayDonations()" style="display: inline">Visualizza le donazioni mensili</button>
     </div>
+    <table id="resultTable"></table>
     <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div>
 </div>
 

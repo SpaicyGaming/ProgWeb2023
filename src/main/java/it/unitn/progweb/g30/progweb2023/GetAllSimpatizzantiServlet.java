@@ -33,7 +33,10 @@ public class GetAllSimpatizzantiServlet extends HttpServlet {
             arr.add(gson.toJson(u));
         }
         PrintWriter pw = response.getWriter();
-        pw.println(arr);
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        pw.print(arr);
+        pw.flush();
     }
 
     @Override
