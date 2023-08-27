@@ -93,6 +93,7 @@ function addUsersTable(users) {
 }
 
 function displayAllUsers() {
+    removeById("resultContainer");
     removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllUsersServlet"), true);
@@ -106,6 +107,7 @@ function displayAllUsers() {
 }
 
 function displayAllSimpatizzanti() {
+    removeById("resultContainer");
     removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllSimpatizzantiServlet"), true);
@@ -119,6 +121,7 @@ function displayAllSimpatizzanti() {
 }
 
 function displayAllAderenti() {
+    removeById("resultContainer");
     removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllAderentiServlet"), true);
@@ -188,12 +191,55 @@ function displayViews() {
 }
 
 function displayDonations() {
+    removeById("resultContainer");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetDonationsServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
-            document.getElementById("resultContainer").innerHTML = this.response;
+            var donations = JSON.parse(JSON.stringify(this.response));
+            const options = {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'Donazioni Ricevute'
+                },
+                xAxis: {
+                    categories: ['Mese']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Importo'
+                    }
+                },
+                series: []
+            }
+
+            var monthlyDonations = [];
+            for (let i = 1; i <= 12; i++) {
+                monthlyDonations[i] = 0;
+            }
+
+            for (let i = 0; i < donations.length; i++) {
+                var donation = JSON.parse(donations[i]);
+                var date = donation['data'];
+                const currentYear = new Date(Date.now()).getFullYear()
+                var dateSplit = date.split('-');
+                if (dateSplit[0] === currentYear.toString()) {
+                    var month = parseInt(dateSplit[1]);
+                    monthlyDonations[month] += donation['importo'];
+                }
+            }
+
+            for (let i = 1; i <= 12; i++) {
+                options.series.push({
+                    name: i,
+                    data: [monthlyDonations[i], 10000]
+                })
+            }
+
+            new Highcharts.Chart('graphDiv', options);
         }
     }
     xhttp.send();

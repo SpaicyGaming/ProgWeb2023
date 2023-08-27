@@ -20,8 +20,8 @@
         <button onclick="displayDonations()" style="display: inline">Visualizza le donazioni mensili</button>
     </div>
     <table id="resultTable"></table>
-    <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div>
     <div id="graphDiv" style="width:100%; height:400px;"></div>
+    <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div>
 </div>
 
 <jsp:include page="footer.jsp"/>

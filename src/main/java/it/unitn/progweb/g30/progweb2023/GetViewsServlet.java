@@ -44,7 +44,6 @@ public class GetViewsServlet extends HttpServlet {
                     ServletContext context = request.getServletContext();
                     String realPath = context.getRealPath("\\");
                     File outf = new File(realPath + "\\views.json");
-                    //System.out.println(realPath + "\\donations.json");
                     if (!outf.createNewFile()) {
                         outf.delete();
                         outf.createNewFile();
@@ -58,7 +57,6 @@ public class GetViewsServlet extends HttpServlet {
                     JsonArray resultArr = gson.fromJson(reader, JsonArray.class);
                     response.setContentType("application/json");
                     response.setCharacterEncoding("UTF-8");
-                    System.out.println(resultArr);
                     pw.print(resultArr);
                     pw.flush();
                 } catch (Exception e) {

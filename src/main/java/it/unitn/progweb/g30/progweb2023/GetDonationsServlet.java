@@ -2,6 +2,7 @@ package it.unitn.progweb.g30.progweb2023;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.stream.JsonReader;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -42,7 +43,6 @@ public class GetDonationsServlet extends HttpServlet {
                 ServletContext context = request.getServletContext();
                 String realPath = context.getRealPath("\\");
                 File outf = new File(realPath + "\\donations.json");
-                //System.out.println(realPath + "\\donations.json");
                 if (!outf.createNewFile()) {
                     outf.delete();
                     outf.createNewFile();
@@ -52,7 +52,12 @@ public class GetDonationsServlet extends HttpServlet {
                 fw.close();
                 PrintWriter pw = response.getWriter();
                 Path p = Path.of(realPath + "\\donations.json");
-                pw.println(Files.readString(p));
+                JsonReader reader = new JsonReader(Files.newBufferedReader(p));
+                JsonArray resultArr = gson.fromJson(reader, JsonArray.class);
+                response.setContentType("application/json");
+                response.setCharacterEncoding("UTF-8");
+                pw.print(resultArr);
+                pw.flush();
             } catch (Exception e) {
                 e.printStackTrace();
             }
