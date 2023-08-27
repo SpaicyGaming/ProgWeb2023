@@ -2,6 +2,7 @@ package it.unitn.progweb.g30.progweb2023;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
+import com.google.gson.stream.JsonReader;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -53,7 +54,13 @@ public class GetViewsServlet extends HttpServlet {
                     fw.close();
                     PrintWriter pw = response.getWriter();
                     Path p = Path.of(realPath + "\\views.json");
-                    pw.println(Files.readString(p));
+                    JsonReader reader = new JsonReader(Files.newBufferedReader(p));
+                    JsonArray resultArr = gson.fromJson(reader, JsonArray.class);
+                    response.setContentType("application/json");
+                    response.setCharacterEncoding("UTF-8");
+                    System.out.println(resultArr);
+                    pw.print(resultArr);
+                    pw.flush();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

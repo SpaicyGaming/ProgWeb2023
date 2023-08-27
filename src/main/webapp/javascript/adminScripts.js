@@ -1,3 +1,8 @@
+function removeById(_id) {
+    var e = document.getElementById(_id);
+    if (e !== null) e.innerHTML = '';
+}
+
 function addUsersTable(users) {
     // var table = document.createElement("TABLE");
     var table = document.getElementById("resultTable");
@@ -88,6 +93,7 @@ function addUsersTable(users) {
 }
 
 function displayAllUsers() {
+    removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllUsersServlet"), true);
     xhttp.responseType = "json";
@@ -100,6 +106,7 @@ function displayAllUsers() {
 }
 
 function displayAllSimpatizzanti() {
+    removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllSimpatizzantiServlet"), true);
     xhttp.responseType = "json";
@@ -112,6 +119,7 @@ function displayAllSimpatizzanti() {
 }
 
 function displayAllAderenti() {
+    removeById("graphDiv");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetAllAderentiServlet"), true);
     xhttp.responseType = "json";
@@ -124,30 +132,56 @@ function displayAllAderenti() {
 }
 
 function displayViews() {
+    removeById("resultTable");
     document.getElementById("resultContainer").innerHTML = "Loading...";
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetViewsServlet"), true);
     xhttp.responseType = "json";
     xhttp.onreadystatechange = function () {
         if (xhttp.readyState === 4 && xhttp.status === 200) {
+            var views = JSON.parse(JSON.stringify(this.response));
+
+            const options = {
+                chart: {
+                    type: 'bar'
+                },
+                title: {
+                    text: 'Visualizzazioni Totali: '
+                },
+                xAxis: {
+                    categories: ['Pagina']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Visualizzazioni'
+                    }
+                },
+                series: []
+            }
+
+            var totalViews = 0;
+            for (let i = 0; i < views.length; i++) {
+                var view = JSON.parse(views[i]);
+                totalViews += view['views'];
+                options.series.push({
+                    name: view['page'],
+                    data: [view['views']]
+                })
+            }
+            options.title.text += totalViews;
+
             let link = document.createElement("a");
             let btn = document.createElement("button");
             link.setAttribute("href", encodeMyURL("ResetViewsServlet"));
             link.appendChild(btn);
-            btn.innerText = "reset";
+            btn.innerText = "reset visualizzazioni";
             let btnDiv = document.createElement("div");
-            let dataDiv = document.createElement("div");
             let rc = document.getElementById("resultContainer");
             rc.innerHTML = '';
-            /*
-            while (rc.firstChild) {
-                rc.removeChild(rc.lastChild);
-            }
-            */
             rc.appendChild(btnDiv);
-            rc.appendChild(dataDiv);
             btnDiv.appendChild(link);
-            dataDiv.innerHTML = this.response;
+
+            new Highcharts.Chart('graphDiv', options);
         }
     }
     xhttp.send();

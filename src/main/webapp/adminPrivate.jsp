@@ -10,6 +10,7 @@
 <body>
 <jsp:include page="intestazionePrivate.jsp"/>
 <script src="./javascript/adminScripts.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <div class="maintext">
     <div id="buttonContainer" class="bc" style="margin: auto; text-align:center">
         <button onclick="displayAllUsers()" style="display: inline">Visualizza tutti gli utenti</button>
@@ -20,6 +21,7 @@
     </div>
     <table id="resultTable"></table>
     <div id="resultContainer" class="rc" style="margin: auto; text-align: center"></div>
+    <div id="graphDiv" style="width:100%; height:400px;"></div>
 </div>
 
 <jsp:include page="footer.jsp"/>
