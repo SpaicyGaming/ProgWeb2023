@@ -1,14 +1,14 @@
-Tue Jul 11 22:30:20 CEST 2023 : Server di rete Apache Derby: 10.16.1.1 - (1901046) avviato e pronto ad accettare connessioni sulla porta 1527
+Mon Aug 28 21:58:11 CEST 2023 : Apache Derby Network Server - 10.16.1.1 - (1901046) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
-Tue Jul 11 22:31:50 CEST 2023:
-Avvio della versione di Derby The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): istanza a816c00e-0189-46a5-d0af-000003896ba8
-sulla directory di database C:\Users\asus\Desktop\ProgWeb2023\Tum4WorldDB con caricatore classi jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 
-Caricato da file:/C:/Apache/db-derby-10.16.1.1-bin/lib/derby.jar
+Mon Aug 28 21:58:29 CEST 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-018a-3db9-a43c-00000f796cc8 
+on database directory /Users/coco/git/ProgWeb2023/Tum4WorldDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@531d72ca 
+Loaded from file:/Users/coco/development/db-derby-10.16.1.1-bin/lib/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=17.0.7+8-LTS-224
-user.dir=C:\Users\asus\Desktop\ProgWeb2023
-os.name=Windows 11
-os.arch=amd64
-os.version=10.0
+java.runtime.version=17.0.2+8-86
+user.dir=/Users/coco/git/ProgWeb2023
+os.name=Mac OS X
+os.arch=aarch64
+os.version=13.5
 derby.system.home=null
-Programma di caricamento classe database avviato - derby.database.classpath=''
+Database Class Loader started - derby.database.classpath=''
