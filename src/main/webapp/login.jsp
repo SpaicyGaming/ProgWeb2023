@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Tum4World</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 <jsp:include page="intestazione.jsp"/>
