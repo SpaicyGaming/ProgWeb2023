@@ -191,6 +191,7 @@ function displayViews() {
 }
 
 function displayDonations() {
+    removeById("resultTable");
     removeById("resultContainer");
     let xhttp = new XMLHttpRequest();
     xhttp.open("GET", encodeMyURL("GetDonationsServlet"), true);
