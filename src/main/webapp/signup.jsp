@@ -24,20 +24,19 @@
                 return false;
             } else document.getElementById("pass").innerHTML = "";
 
-            if (a != b) {
+            if (a !== b) {
                 document.getElementById("pass").innerHTML = "Le due password non coincidono";
                 return false;
             } else document.getElementById("pass").innerHTML = "";
 
-            let lower = false;
-            let upper = false;
-            let special = false //special tra $!?
+            let lower, upper, special, ourFirstNameInitial;
 
             lower = /[a-z]/.test(a);
             upper = /[A-Z]/.test(a);
             special = /[$!?]/.test(a);
-            if (!(lower && upper && special)) {
-                document.getElementById("pass").innerHTML = "Bisogna avere nella password almeno una maiuscola, minuscola e uno tra $!?";
+            ourFirstNameInitial = /[GVRM]/.test(a);
+            if (!(lower && upper && special && ourFirstNameInitial)) {
+                document.getElementById("pass").innerHTML = "La password deve contenere almeno una lettera maiuscola, una minuscola, un carattere tra '$!?', e almeno una delle lettere 'GVRM'";
                 return false;
             } else document.getElementById("pass").innerHTML = "";
 
