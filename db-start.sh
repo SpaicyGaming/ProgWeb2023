@@ -1,0 +1,1 @@
+java -jar "$DERBY_INSTALL"/lib/derbyrun.jar server start
