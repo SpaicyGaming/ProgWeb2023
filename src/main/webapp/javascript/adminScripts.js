@@ -236,7 +236,7 @@ function displayDonations() {
             for (let i = 1; i <= 12; i++) {
                 options.series.push({
                     name: i,
-                    data: [monthlyDonations[i], 10000]
+                    data: [monthlyDonations[i]]
                 })
             }
 
