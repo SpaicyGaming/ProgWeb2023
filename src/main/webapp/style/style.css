@@ -172,3 +172,55 @@ div.footer p {
     text-align: center;
     color: white;
 }
+
+.image-container-small {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 15vw;
+    padding: 1vw;
+    box-sizing: border-box;
+}
+
+.image-container-small img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container-large {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-container-large img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container-large figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+}
+
+.home-image {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-description {
+    margin-bottom: 10px;
+}

@@ -53,41 +53,25 @@
 </div>
 
 <div style="padding-left: 2%; padding-top: 3%">
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img1.jpg" alt="Adulti che si danno il cinque">
     </div>
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img2.jpg" alt="Bambini sorridenti">
     </div>
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img3.jpg" alt="Bambini che mangiano">
     </div>
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img4.jpg" alt="Bambini sorridenti">
     </div>
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img5.jpg" alt="Noi che lavoriamo">
     </div>
-    <div class="image-container">
+    <div class="image-container-small">
         <img src="images/img6.jpg" alt="Noi che lavoriamo">
     </div>
 </div>
-
-<style>
-    .image-container {
-        display: inline-block;
-        text-align: center;
-        vertical-align: top;
-        width: 15vw;
-        padding: 1vw;
-        box-sizing: border-box;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-    }
-</style>
 
 <jsp:include page="footer.jsp"/>
 </body>

@@ -10,28 +10,7 @@
 <body>
 <jsp:include page="intestazione.jsp"/>
 
-<style>
-    .image-container {
-        display: inline-block;
-        text-align: center;
-        vertical-align: top;
-        width: 33%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    .image-container img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .image-container figcaption {
-        margin-top: 10px;
-        font-style: italic;
-    }
-</style>
-
-<div class="image-container">
+<div class="image-container-large">
     <a href="<%=response.encodeURL("attivita1.jsp")%>">
         <img src="images/attivita1.jpg" alt="Attività 1 - apprendimento bambini">
     </a>
@@ -40,7 +19,7 @@
     </figcaption>
 </div>
 
-<div class="image-container">
+<div class="image-container-large">
     <a href="<%=response.encodeURL("attivita2.jsp")%>">
         <img src="images/attivita2.jpg" alt="Attività 2 - materiale didattico">
     </a>
@@ -49,7 +28,7 @@
     </figcaption>
 </div>
 
-<div class="image-container">
+<div class="image-container-large">
     <a href="<%=response.encodeURL("attivita3.jsp")%>">
         <img src="images/attivita3.jpg" alt="Attività 3 - programmi educativi">
     </a>

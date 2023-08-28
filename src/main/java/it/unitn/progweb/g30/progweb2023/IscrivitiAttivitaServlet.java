@@ -36,7 +36,6 @@ public class IscrivitiAttivitaServlet extends HttpServlet {
                     insertAttivitaStmt.executeUpdate();
                 }
 
-                // todo use returned generated keys instead of querying again?
                 rs = selectAttivitaStmt.executeQuery();
                 rs.next();
             }

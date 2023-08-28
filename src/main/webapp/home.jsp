@@ -6,53 +6,18 @@
     <title>Tum4World</title>
     <link rel="icon" href="images/logo.png">
     <meta charset="UTF-8"/>
-    <style>
-        .container {
-            display: flex;
-            align-items: center;
-        }
-
-        .image {
-            width: 200px;
-            margin-right: 20px;
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        <!--
-        .logo {
-            width: 50px;
-            margin-bottom: 10px;
-        }
-
-        -->
-
-        .description {
-            margin-bottom: 10px;
-        }
-
-        .button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
 <jsp:include page="intestazione.jsp"/>
 
-<div class="container">
-    <img class="image" src="images/imgDescrittiva.jpg" alt="Immagine bambini locali" style="width: 25%">
+<div class="home-container">
+    <img class="home-image" src="images/imgDescrittiva.jpg" alt="Immagine bambini locali" style="width: 25%">
 
-    <div class="content">
+    <div class="home-content">
         <img src="images/logo.png"  alt="Logo Tum4World"
              style="padding-bottom: 5%; padding-left: 3%; width: 20%; height: auto; align-content: center;">
 
-        <p class="description">Benvenuti nella grande famiglia di Tum4World, impegnata a fornire istruzione di qualità
+        <p class="home-description">Benvenuti nella grande famiglia di Tum4World, impegnata a fornire istruzione di qualità
             ai bambini dei paesi meno sviluppati.
             Collaboriamo con comunità locali, insegnanti e scuole per creare programmi personalizzati. Utilizziamo
             tecnologie accessibili e risorse digitali per raggiungere anche le zone remote.
